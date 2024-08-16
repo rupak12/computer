@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
-        <link href="image/catalog/Banners/mvp-favicon.png" rel="icon" />
         <link rel="stylesheet" href="catalog/view/assets/css/demo.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -244,7 +243,6 @@
     </style>
 
 <body class="wrapper">
-   
             <!-- Topbar Start -->
             <div class="container-fluid">
               <div class="row bg-secondary py-1 px-xl-5">
@@ -377,87 +375,253 @@
               </div>
           </div>
           <!-- Navbar End -->
-          <main class="auth-pages" style="background: url('catalog/view/assets/img/login-bg-1.jpg');">
-  
+
+    <main>
+        
+        <section class="section hero-banner hero-banner-2 hero-bg">
+
             <div class="container content-overlay">
-                
-                <div class="row justify-content-end">
-                    <div class="col-lg-6 col-md-9 col-sm-8">
-                        <div class="card entry-card">
-                                                                                    <div class="card-body p-4">
-                                
-                                <h4 class="title"> Sign in</h4>
-                                <p class="text-muted mb-4"> I am a returning customer </p>
-                                
-                                <form action="https://themvp.in/index.php?route=account/login" method="post" enctype="multipart/form-data">
-                                    <div class="row g-3">
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <input type="email" class="form-control is-invalid" name="email" value="" id="floatingInput" placeholder="E-Mail Address" autocomplete="off">
-                                                <label for="floatingInput">Email address</label>
-                                            </div>
-                                        </div>
-                                       
-                                        <div class="col-12">
-                                            <div class="form-floating input-cta">
+                <div class="banner-block">
 
-                                                  <input id="enter-password" type="password" class="form-control" name="password" value="" placeholder="Password" autocomplete="off">
-                                                  <label for="floatingPassword">Password</label>
+                    <div class="banner-content">
+                        <div class="banner-text">
+                            <h1 class="title">
+                                <span>Talk to an</span>
+                                <span class=" d-inline title__graident graident__4">Me</span>
+                                <span class="d-inline">expert</span>
+                            </h1>
 
-                                                    <div class="input-overlap password-showhide ">
-                                                  <span toggle="#enter-password" class="mdi mdi-eye-outline field-icon toggle-password"></span>
-                                                    </div>
-                                              </div>
-                                        </div>
-                                        
-                                        
-                                        
-                                        <div class="col-12">
-                                            <div class="row justify-content-between">
-                                                <!--<div class="col-auto">
-                                                    
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                      <label class="form-check-label" for="flexCheckDefault">
-                                                        Remember me
-                                                      </label>
-                                                    </div>
-                                                    
-                                                    
-                                                </div>-->
-                                                <div class="col-auto">
-                                                    <a href="https://themvp.in/index.php?route=account/forgotten" class="link-icon small"> Forgotten Password</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <!-- <div class="col-12">
-                                            <div class="g-recaptcha" data-sitekey="6LeEO_UiAAAAAOz52IcyG_eWh4xLF-m7L2HRtmfl"></div>
-                                        </div> -->
-                                                                                <div class="col-12">
-                                            <div class="form-group mt-3 text-center">
-                                                <button class="btn btn-primary btn-cta btn-lg btn-block w-100" type="submit">Login </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                                                    </form><!-- end sign in form -->
+                            <p class="mt-3">At me.in, we specialize in building workstations that are tailored to each customer, just like a suit...but for your computer! And the best way to do that? By talking to you directly, of course! Our consultation is free and our experts can configure a computer that meets your specific needs without any pressure or commission. So give us a call, shoot us an email, or drop by any of our stores, we're ready to help you build the perfect computer for your needs!</p>
+                            
+                            
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Contact-Modal">Connect Now</a>
 
-
-                                <div class="entry-alt-options">
-                                    <p>New Customer? Register Account <a href="https://themvp.in/create-account" class="link-underline ms-2">Sign Up</a></p>
-                                </div>
-                            </div> <!-- end card-body -->
                         </div>
-                        <!-- end card -->
+                    </div>
+                    <div class="banner-visuals">
+                        <img src="catalog/view/assets/img/mvp-expert.webp">
+                    </div>
+                </div>
 
-                    </div> <!-- end col -->
-                </div><!-- end row -->
+
+            </div>
+        </section>
+        
+        <section class="help">
+            <div class="section-head"> 
+                <h1>BUILDING A PC CAN BE COMPLEX,<span class="d-md-block">We're here to help!</span></h1>
+                <p>Reach out to us, we won't bite - unless you're into that kind of thing (just kidding, please don't sue us). </p>
+            </div>
+            
+            <div class="guide-cards">
+                <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="catalog/view/assets/img/guide-card-thumb-1.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Email Consultation <a href="" target="_blank" class="float-end"><img src="catalog/view/assets/img/svg/email.svg" class="icon icon__medium"> </a></h5>
+                        <p class="card-text">Our email consultation is simple and convenient, just click the button below, fill in your details, and tell us what you're looking for. We'll get back to you within one business day and take it from there. No more wasting time, let's get building the perfect workstation for you!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="catalog/view/assets/img/guide-card-thumb-2.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Message Us! <a href="" target="_blank"  class="float-end"><img src="catalog/view/assets/img/svg/whatsapp.svg" class="icon icon__medium"> </a></h5>
+                        <p class="card-text">You can also reach out to us over WhatsApp for a consultation. Just click the button below, save our number and shoot us a message with your requirements. One of our experts will get back to you as soon as possible. It's that simple and convenient!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="catalog/view/assets/img/guide-card-thumb-3.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Call us <a href="tel:18003092944" target="_blank" class="float-end"><img src="catalog/view/assets/img/svg/phone.svg" class="icon icon__medium"> </a></h5>
+                        <p class="card-text">If you prefer speaking to someone directly, you can give us a call. Our toll free is open from 10am to 8pm, Monday to Saturday. Our experts are available to answer any questions you may have and guide you through the process of building your perfect workstation.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="catalog/view/assets/img/mvp-store-hyderabad-thumb.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Hyderabad Store <a href="https://goo.gl/maps/dSpEBXmuyDk5qzgb6" target="_blank" class="float-end"><img src="catalog/view/assets/img/svg/location-pin.svg" class="icon icon__medium"> </a></h5>
+                        <p class="card-text">Visit our Hyderabad store, our flagship store, and it also serves as our primary fulfillment center, ensuring prompt and efficient delivery of your custom-built workstations.</p>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col">
+                    <div class="card h-100">
+                      <img src="catalog/view/assets/img/mvp-store-gurgaon-thumb.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Gurgaon Store <a href="https://goo.gl/maps/tEUYoCKG9SKS22Lm8" target="_blank" class="float-end"><img src="catalog/view/assets/img/svg/location-pin.svg" class="icon icon__medium"> </a></h5>
+                        <p class="card-text">Visit our Gurgaon store, where the service is always top-notch, unless you're into that whole "mediocre" thing.</p>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col">
+                    <div class="card h-100">
+                      <img src="catalog/view/assets/img/mvp-store-bangalore-thumb.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Bangalore Store <a href="https://goo.gl/maps/5ujDkRVQGxmYyECr8"  target="_blank" class="float-end"><img src="catalog/view/assets/img/svg/location-pin.svg" class="icon icon__medium"> </a></h5>
+                        <p class="card-text">Visit our Bangalore store, where the service is always A+ , we promise we won't let you down unlike the traffic in Bangalore.</p>
+                      </div>
+                    </div>
+                  </div>
                 
-            </div><!-- end container -->
+                </div>
+                </div>
+                
+                
+            </div>
+            <div class="cta-sticky text-center">
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Contact-Modal">Talk to expert</a>
+                </div>
+        </section>
+    </main>
 
+    <div class="modal modal-custom  modal-custom-theme fade" data-bs-backdrop="static" data-bs-keyboard="false" id="Contact-Modal" tabindex="-1" aria-labelledby="Contact-ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-form">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+              <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+              <div class="elfsight-app-d92511e2-199e-4a47-a2b7-5a2710c1e672"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script type="text/javascript">
+  
+  $('#sendMessageButton').click(function () {
+    $.ajax({
+        url: 'index.php?route=information/talktoexpert/validate',
+        type: 'post',
+        data: $("#contactForm").serialize(),
+        /*dataType: 'json',*/
+        /*beforeSend: function () {
+            //$('#button-cart').button('loading');
+        },*/
+        /*complete: function () {
+            //$('#button-cart').button('reset');
+        },*/
+        success: function (json) {
+            $("#errorname").remove();
+            $("#erroremail").remove();
+            $("#errorphone").remove();
+            $("#errorlocation").remove();
+            $("#errormessage").remove();
+            
+            
+            if (json['error']) {
+              if(json['error']['name']){
+                /*$('#errorNameDiv').html(json['error']['name']);*/
+                $("#name").after('<p class="help-block text-danger" id="errorname">Name must be between 3 and 32 characters!</p>');
+                setTimeout(function() {
+                  $('#errorname').fadeOut('fast');
+                }, 2000);
+              }
 
-        </main><!-- end Page -->
+              if(json['error']['email']){
+                $("#email").after('<p class="help-block text-danger" id="erroremail">E-Mail Address does not appear to be valid!</p>');
+                setTimeout(function() {
+                  $('#erroremail').fadeOut('fast');
+                }, 2000);
+              }
 
+              if(json['error']['phone']){
+                $("#phone").after('<p class="help-block text-danger" id="errorphone">Phone must be between 11 and 20 characters!</p>');
+                setTimeout(function() {
+                  $('#errorphone').fadeOut('fast');
+                }, 2000);
+              }
+
+              if(json['error']['location']){
+                $("#location").after('<p class="help-block text-danger" id="errorlocation">Location must be between 7 and 32 characters!</p>');
+                setTimeout(function() {
+                  $('#errorlocation').fadeOut('fast');
+                }, 2000);
+              }
+
+              if(json['error']['message']){
+                $("#message").after('<p class="help-block text-danger" id="errormessage">Message must be between 10 and 3000 characters!</p>');
+                setTimeout(function() {
+                  $('#errormessage').fadeOut('fast');
+                }, 2000);
+              }
+
+              if(json['error']['recaptcha']){
+                $('#errorrecaptcha').css('display','block');
+                setTimeout(function() {
+                  $('#errorrecaptcha').fadeOut('fast');
+                }, 2000);
+                
+              } else {
+                $('#errorrecaptcha').css('display','none');
+              }
+
+            } else{
+              $('#contactForm').submit();  
+            }
+            
+        }
+    })
+  });
+</script>
+<!-- <script>
+function fnContactSubmit(){
+	var name      = $.trim($("#name").val());
+    var email     = $.trim($("#email").val());
+    var phone     = $.trim($("#phone").val());
+    var location  = $.trim($("#location").val());
+	var message   = $.trim($("#message").val());
+	
+	$("#errorname").remove();
+	$("#errormessage").remove();
+	$("#erroremail").remove();
+	$("#errorsubject").remove();
+
+	if(name.length<3){
+		$("#name").after('<p class="help-block text-danger" id="errorname">Name must be between 3 and 32 characters!</p>');
+		return false;
+	}
+
+	if(IsEmail(email)==false){
+	  $("#email").after('<p class="help-block text-danger"  id="erroremail">E-Mail Address does not appear to be valid!</p>');
+		return false;
+	}
+
+    if(phone.length<7){
+        $("#phone").after('<p class="help-block text-danger" id="errorphone">Phone must be between 7 and 32 characters!</p>');
+        return false;
+    }
+
+    if(location.length<7){
+        $("#location").after('<p class="help-block text-danger" id="errorlocation">Location must be between 7 and 32 characters!</p>');
+        return false;
+    }
+
+	if(message.length<10){
+		$("#message").after('<p class="help-block text-danger"  id="errormessage" >Message must be between 10 and 3000 characters!</p>');
+		return false;
+	}
+
+	$("#contactForm").submit();
+
+}
+
+function IsEmail(email) {
+  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if(!regex.test(email)) {
+    return false;
+  }else{
+    return true;
+  }
+}
+</script> -->
+    
 <section class="blog media">
   <div class="container layout-fixed">
     <div class="row">
@@ -469,11 +633,11 @@
           </div>
           <div class="teaser-card">
             <div class="mb-4"><h1 class="title title__small">Instagram</h1></div>
-            
+          
           </div>
           <div class="teaser-card">
             <div class="mb-4"><h1 class="title title__small">Youtube</h1></div>
-            
+           
           </div>
         </div>
       </div>
@@ -785,8 +949,9 @@
 </footer>
 
 
+
 <!-- Floating Buttons -->
-<a href="https://api.whatsapp.com/send?phone=918977917186&text=Hi! I have a query on TheMVP website" class="fixed-whatsapp" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=918977917186&text=Hi! I have a query me website" class="fixed-whatsapp" target="_blank">
     <img src="catalog/view/assets/img/svg/whatsapp-light.svg">
 </a>
 <!-- End Floating Buttons -->
@@ -900,6 +1065,26 @@
             const expb = document.querySelector(".exp-b");
             const expc = document.querySelector(".exp-c");
           const dur = 0.6;
+
+//     let tl1 = gsap.timeline({
+//       reversed: true,
+//     });
+//     let tl2 = gsap.timeline({
+//       reversed: true,
+//     });
+
+//     tl1
+//       .fromTo(".img-1", {width: "50%" }, { duration: dur, width: "60%" })
+//       .fromTo(".img-2", {width: "50%" }, { duration: dur, width: "40%" }, "<");
+
+//     tl2
+//       .to(".img-2", { duration: dur, width: "60%" })
+//       .to(".img-1", { duration: dur, width: "40%" }, "<");
+//
+//        gsap.set(".exp-a", { width: "33.3%" });
+//        gsap.set(".exp-b", { width: "33.3%" });
+//        gsap.set(".exp-c", { width: "33.3%" });
+
         $(".exp-a").click(function(){
           gsap.to(".exp-a", { className: "sec-col exp-a expand open"});
           gsap.to(".exp-b", { className: "sec-col exp-b expand close" });
