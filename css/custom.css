@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+.ctn-wrapper {
+    /*display: flex;*/
+    }
+    .ctn-wrapper .ctn-static-txt {
+    color: #ffffff;
+    font-size: 3.75rem;
+    font-weight: 400;
+    }
+    .ctn-wrapper .ctn-dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    }
+    .ctn-dynamic-txts li {
+    list-style: none;
+    color: #212529;
+    font-size: 80px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+    }
+    @keyframes slide {
+    100% {
+    top: -360px;
+    }
+    }
+    .ctn-dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+    }
+    .ctn-dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fffae5;
+    /*border-left: 2px solid #212529;*/
+    animation: typing 3s steps(10) infinite;
+    }
+    @keyframes typing {
+    40%,
+    60% {
+    left: calc(100% + 30px);
+    }
+    100% {
+    left: 0;
+    }
+    }
+    @media only screen and (max-width:768px){
+    .ctn-dynamic-txts li span::after{
+    background: #fffef8 !important;
+    height: 160% !important;
+    }
+    .ctn-dynamic-txts li{  
+    font-size: 30px !important;
+    }
+    .ctn-wrapper .ctn-dynamic-txts {
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    }
+    }
+    @media only screen and (max-width:768px){
+        #typeWriter{
+        font-size: 18px !important; 
+        }
+        }
+        .n-items {
+            font-size: 10px;
+            color: #000;
+            background: #feda2a;
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            line-height: 1.3;
+            text-align: center;
+            overflow: hidden;
+            font-weight: 800;
+            }
+            /*for html spanner*/
+            .lds-roller {
+                display: inline-block;
+                position: relative;
+                width: 80px;
+                height: 80px;
+                }
+                .lds-roller div {
+                animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+                transform-origin: 40px 40px;
+                }
+                .lds-roller div:after {
+                content: " ";
+                display: block;
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #fff;
+                margin: -4px 0 0 -4px;
+                }
+                .lds-roller div:nth-child(1) {
+                animation-delay: -0.036s;
+                }
+                .lds-roller div:nth-child(1):after {
+                top: 63px;
+                left: 63px;
+                }
+                .lds-roller div:nth-child(2) {
+                animation-delay: -0.072s;
+                }
+                .lds-roller div:nth-child(2):after {
+                top: 68px;
+                left: 56px;
+                }
+                .lds-roller div:nth-child(3) {
+                animation-delay: -0.108s;
+                }
+                .lds-roller div:nth-child(3):after {
+                top: 71px;
+                left: 48px;
+                }
+                .lds-roller div:nth-child(4) {
+                animation-delay: -0.144s;
+                }
+                .lds-roller div:nth-child(4):after {
+                top: 72px;
+                left: 40px;
+                }
+                .lds-roller div:nth-child(5) {
+                animation-delay: -0.18s;
+                }
+                .lds-roller div:nth-child(5):after {
+                top: 71px;
+                left: 32px;
+                }
+                .lds-roller div:nth-child(6) {
+                animation-delay: -0.216s;
+                }
+                .lds-roller div:nth-child(6):after {
+                top: 68px;
+                left: 24px;
+                }
+                .lds-roller div:nth-child(7) {
+                animation-delay: -0.252s;
+                }
+                .lds-roller div:nth-child(7):after {
+                top: 63px;
+                left: 17px;
+                }
+                .lds-roller div:nth-child(8) {
+                animation-delay: -0.288s;
+                }
+                .lds-roller div:nth-child(8):after {
+                top: 56px;
+                left: 12px;
+                }
+                @keyframes lds-roller {
+                0% {
+                transform: rotate(0deg);
+                }
+                100% {
+                transform: rotate(360deg);
+                }
+                }
+                #spinner_container {
+                background-color: rgba(0,0,0,0.5);
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 9999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: none;
+                }
+                .container-fluid.layout-fixed {
+                    width: 100%;
+                    padding: 0 !important;
+                }
+                section.find-pc.build-pc {
+                    padding: 0 !important;
+                    background: url("../images/custompc.jpg");
+                    background-size: cover;
+                    position: relative;
+                    top: -42px;
+                }
+                section.find-pc.build-pc {
+                    padding: 0 !important;
+                    background: url("../images/custompc.jpg");
+                    background-size: cover;
+                }
+                .build-pc-container {
+                    background: transparent !important;
+                }
+                .build-pc .build-pc-container::before {
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    left: 0;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.3);
+                }
+                .build-pc .build-pc-container .content {
+                    position: relative;
+                    z-index: 1;
+                    background: rgba(255,255,255,0.3);
+                    border-radius: 0;
+                    padding: 30px;
+                    backdrop-filter: blur(6px);
+                }
+                .build-pc .configure-pc {
+                    width: 100%;
+                    min-height: 40vh;
+                    position: relative;
+                    background: #061f41;
+                    padding: 0;
+                    border: 3px solid;
+                    border-image-slice: 1;
+                    border-image-source: linear-gradient(to left, #00FF00, #FFFF00);
+                    border: 0;
+                }
+                .section-head h1 {
+                    text-align: center;
+                    font-family: 'Orbitron';
+                    margin-bottom: 26px;
+                    font-size: 40px;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                .find-pc .section-head p {
+                    text-align: center;
+                    color: #fff;
+                    width: 70%;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    margin-bottom: 40px !important;
+                }
+                .innerWhite {
+                    /* background: #fff; */
+                    background: rgba(255, 255, 255, 0.7);
+                    color: #fff;
+                }
+                .build-pc .configure-pc .ui-tabs .nav-pills .nav-item .nav-link {
+                    background: transparent;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 2px;
+                    margin: 0;
+                    padding: 10px 15px;
+                    width: 100%;
+                    border-bottom: 3px solid #fff;
+                    font-family: 'Orbitron';
+                    font-weight: bold;
+                }
+                .build-pc .configure-pc .ui-tabs .nav-pills .nav-link.active {
+                    background: transparent;
+                    color: #061f41;
+                    border-bottom: 3px solid #072447;
+                }
+
+                /* custom input */
+               .cst-input  input[type="radio"]{
+                    display: none;
+                  }
+                  
+                  .cst-input label {
+                    border: 1px solid rgba(255,255,255,0.2);
+                    padding: 10px;
+                    display: block;
+                    position: relative;
+                    margin: 10px;
+                    cursor: pointer;
+                    background: rgba(255,255,255,0.2);
+                    box-shadow: 20px 5px 29px -16px #3f3f3f;
+                }
+                  
+                  .cst-input  label:before {
+                    background-color: white;
+                    color: white;
+                    content: " ";
+                    display: block;
+                    border-radius: 50%;
+                    border: 1px solid grey;
+                    position: absolute;
+                    top: -5px;
+                    left: -5px;
+                    width: 25px;
+                    height: 25px;
+                    text-align: center;
+                    line-height: 28px;
+                    transition-duration: 0.4s;
+                    transform: scale(0);
+                  }
+                  
+                  .cst-input  label img {
+                    height: 100px;
+                    width: 100px;
+                    transition-duration: 0.2s;
+                    transform-origin: 50% 50%;
+                    opacity: 0.9;
+                }
+                  
+                .cst-input  :checked + label {
+                    border-color: rgba(255,255,255,1);
+                    background: rgba(255,255,255,0.4);
+                    /* border-color: #000; */
+                    box-shadow: 20px 5px 29px -16px #fff;
+                }
+                  
+                  .cst-input  :checked + label:before {
+                    content: "✓";
+                    background-color: grey;
+                    transform: scale(1);
+                    display: none;
+                  }
+                  
+                  .cst-input  :checked + label img {
+                    transform: scale(0.9);
+                    /* box-shadow: 0 0 5px #333; */
+                    z-index: -1;
+                    filter: saturate(5);
+                    opacity: 1;
+                }
+                  .choose-platform h4 {
+                    font-family: 'Orbitron';
+                    font-size: 20px;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    color: #000;
+                }
+                .build-pc .choose-platform {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 20px 0;
+                }
+                .build-pc .configure-pc .btn:before {
+                    content: '';
+                    display: block;
+                    height: 4px;
+                    width: 364px;
+                    background: -webkit-linear-gradient(left, rgb(9 161 166 / 50%) 0%, rgb(9 161 166) 50%, rgb(9 161 166 / 50%) 100%);
+                    position: relative;
+                    left: -74px;
+                    box-shadow: 0px 0px 5px 1px rgb(9 161 166 / 30%);
+                    transition: 0.1s;
+                    bottom: -39px;
+                }
+               
+                .build-pc .configure-pc .btn {
+                    background: #010f10;
+                    text-decoration: none;
+                    border-bottom: 0 !important;
+                    border-radius: 10px;
+                    position: relative;
+                    display: block;
+                    width: 300px;
+                    overflow: hidden;
+                    color: #09a1a6;
+                    font-size: 26px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-family: 'Bebas Neue';
+                    padding: 14px 60px;
+                }
+                .build-pc .configure-pc .btn:hover {
+                    color: #00f3fb !important;
+                }
+                .build-pc .configure-pc .btn:hover:before {
+                    background: -webkit-linear-gradient(left, rgb(0 243 251 / 50%) 0%, rgb(0 243 251) 50%, rgb(0 243 251 / 50%) 100%);
+                    box-shadow: 0px 0px 7px 2px rgb(0 243 251 / 40%);
+                    color: #00f3fb !important;
+                }
+                .build-pc .build-result .product {
+                    background: transparent;
+                    display: block;
+                    box-shadow: none;
+                    padding: 0;
+                    border-radius: 0;
+                    margin-top: 50px;
+                }
+                div#SelectedSpecs h3 {
+                    text-align: center;
+                    margin-top: 30px;
+                    font-size: 30px;
+                    font-family: 'Orbitron';
+                    color: #fff;
+                }
+                .col-md-4.col-lg-3 {
+                    margin-top: 0 !important;
+                }
+                .build-pc .customized-pc-preview {
+                    background: #061f41;
+                    height: 100%;
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .build-pc .build-pc-container, .find-pc .find-pc-container, .mvp-journey .journey-container {
+                    box-shadow: none !important;
+                }
+                .build-pc .build-pc-container, .find-pc .find-pc-container, .mvp-journey .journey-container {
+                    box-shadow: none !important;
+                    padding: 50px 74px;
+                }
+                .build-pc .build-result .tab-content {
+                    background: transparent;
+                    padding: 1px 0 15px 0;
+                    min-height: 200px;
+                    font-family: 'Poppins' !important;
+                }
+                .pcs .product .pc-specs .spec-title {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-family: 'Orbitron';
+                    color: #fff;
+                }
+                .pcs .product .pc-specs .spec-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    color: #fff;
+                }
+                .spec-item img {
+                    filter: brightness(0) invert(1);
+                }
+                .col-md-8.col-lg-9 {
+                    margin-top: 0 !important;
+                }
+                .ui-tabs.prod-det {
+                    position: relative;
+                }
+                .build-pc .ui-tabs.prod-det .nav {
+                    font-family: 'Bebas Neue';
+                    margin: 0 0 20px 0;
+                    /* transform: rotate(90deg); */
+                    width: auto;
+                    display: flex;
+                    position: absolute;
+                    flex-direction: column;
+                    justify-content: start;
+                    margin: 0 !important;
+                    left: -30px;
+                    top: 0;
+                    background: #061f414f;
+                    z-index: 99;
+                }
+                .build-pc .ui-tabs.prod-det .nav li {
+                    width: 50%;
+                    height: 50%;
+                }
+                .build-pc .ui-tabs.prod-det .nav .nav-item .nav-link {
+                    border-bottom: none;
+                    padding: 0;
+                    margin-right: 0;
+                    writing-mode: vertical-rl;
+                    height: 164.5px;
+                    padding: 7px 10px;
+                    font-size: 15px !important;
+                    background: transparent;
+                    color: rgba(255,255,255,0.9);
+                    font-family: 'Bebas Neue';
+                    font-weight: 400;
+                    text-decoration: none !important;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+                }
+                .build-pc .ui-tabs.prod-det .nav .nav-item .nav-link span {
+                    font-size: 16px;
+                    text-decoration: underline;
+                }
+                .build-pc .ui-tabs.prod-det .nav .nav-item .nav-link span {
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+                a#tab-pc-performance {
+                    border: 0;
+                }
+                .build-pc .build-result .product .key-features {
+                    padding-left: 50px;
+                }
+                .build-pc .ui-tabs.prod-det .nav .nav-item .nav-link.active {
+                    color: rgba(255, 255, 255, 1);
+                    background: #053a58;
+                    border-bottom: 2px solid rgba(255, 255, 255, 1);
+                }
+                .build-pc .ui-tabs.prod-det .nav li {
+                    width: 50%;
+                    height: 50%;
+                    margin: 0;
+                }
+                .blog {
+                    padding: 30px 0 100px 0 !important;
+                }
+                ul.sale-info li > a, ul.sale-info li > div {
+                    display: flex;
+                    align-items: center;
+                    color: #cacaca;
+                }
+                .build-pc .product-cta {
+                    margin: 30px 0 0 0;
+                    padding: 15px 0;
+                    background: #1d1d1d;
+                    border: 0;
+                }
+                .pc-full-details .product-cta .total, .build-pc .product-cta .total {
+                    font-size: 26px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                ul.sale-info {
+                    padding-left: 30px;
+                }
+                .build-pc .configure-pc .component-btn button.btn.btnChoose.cpubtn {
+                    background: rgb(0,233,223);
+                    background: -moz-linear-gradient(246deg, rgba(0,233,223,1) 0%, rgba(38,119,179,1) 100%);
+                    background: -webkit-linear-gradient(246deg, rgba(0,233,223,1) 0%, rgba(38,119,179,1) 100%);
+                    background: linear-gradient(246deg, rgba(0,233,223,1) 0%, rgba(38,119,179,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e9df",endColorstr="#2677b3",GradientType=1);
+                    font-family: 'Orbitron';
+                    font-weight: bold;
+                    font-size: 16px;
+                    border-radius: 0;
+                    color: #fff !important;
+                    box-shadow: 20px 5px 29px -16px #3f3f3f;
+                }
+                .build-pc .configure-pc .component-btn button.btn.btnChoose.cpubtn:hover {
+                    box-shadow: 20px 5px 29px -16px #fff !important;
+                }
+                .build-pc .configure-pc .component-btn button.btn.btnChoose.cpubtn:before {
+                   display: none;
+                }
+                .build-pc .configure-pc .btn.btnNav {
+                    background: #061f41;
+                    width: 60px !important;
+                    padding: 10px;
+                    min-width: 30px !important;
+                    border-radius: 0;
+                    opacity: 1 !important;
+                    color: #fff !important;
+                    pointer-events: all !important;
+                    cursor: pointer !important;
+                }
+                .build-pc .configure-pc .btn.btnNav:before {
+                    display: none;
+                 }
+                 .build-pc .configure-pc .btn.btnNav .icon {
+                    margin: 0;
+                    filter: brightness(0) invert(1);
+                }
+                .modal {
+                    background: rgba(255,255,255,0.1);
+                    backdrop-filter: blur(20px);
+                }
+                .modal-content {
+                    background-color: #1d1d1d;
+                    border-radius: 0;
+                }
+                .modal-header {
+                    background: #000;
+                    border-radius: 0 !important;
+                    border:0;
+                }
+                .modal-title {
+                    margin-bottom: 0;
+                    line-height: 1.5;
+                    color: #fff;
+                    font-family: 'Orbitron';
+                }
+                .modal-footer {
+                    background: #000;
+                    border-radius: 0 !important;
+                    border: 0;
+                }
+                .modal-choose-components .modal-body {
+                    background: #1d1d1d;
+                    padding: 15px;
+                }
+                .modal-header .btn-close {
+                    background: transparent;
+                    color: #fff;
+                    padding: 0;
+                }
+                span.close-icon svg {
+                    width: 20px;
+                    margin-right: 10px;
+                }
+                .modal-footer button {
+                    background: transparent;
+                    color: #efefef;
+                    text-transform: uppercase;
+                }
+                .accordion-item {
+                    background-color: transparent !important;
+                    border: 0;
+                    border-radius: 0 !important;
+                    border-bottom: 1px solid #363535;
+                }
+                button.accordion-button {
+                    background: #000 !important;
+                    border: 0 !important;
+                    border-radius: 0 !important;
+                    font-family: 'Poppins';
+                    color: #fff !important;
+                    font-weight: 400;
+                    box-shadow: none !important;
+                   outline: 0 !important;
+                }
+                .accordion-button::after {
+                    filter: brightness(0) invert(1);
+                }
+                .list-group {
+                    border-radius: 0;
+                }
+                .list-group-item {
+                    position: relative;
+                    display: block;
+                    padding: .5rem 1rem;
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: #1d1d1d;
+                    border: 1px solid rgba(0,0,0,.125);
+                }
+                .list-group-item-action:focus, .list-group-item-action:hover {
+                    z-index: 1;
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: #000;
+                }
+                .accordion-item:last-of-type{
+                    border: 0;
+                }
