@@ -5832,7 +5832,7 @@ main:not(.cta-fixed) .pcs-cta {
 
 .order-tracking {
   position: relative;
-  background: #231f20;
+  background: url('images/bangalore.svg');
   color: #fff;
   padding: 30px 80px 100px 80px;
   margin-bottom: -120px
@@ -5860,7 +5860,7 @@ main:not(.cta-fixed) .pcs-cta {
 }
 
 .order-status {
-  background: rgba(255, 255, 255, .1);
+  background: rgb(23 157 147);
   border-radius: 10px;
   overflow: hidden;
   padding: 30px 50px 40px 50px
@@ -5940,7 +5940,7 @@ main:not(.cta-fixed) .pcs-cta {
 
 .order-status .status-progress-bar .step-text {
   font-size: 13px;
-  color: #868686;
+  color: #000000;
   white-space: pre-wrap
 }
 
@@ -5955,7 +5955,7 @@ main:not(.cta-fixed) .pcs-cta {
 }
 
 .order-tracking .order-info {
-  background: #4a4748;
+  background: #000000;
   border: solid 1px #8c8c8c;
   border-radius: 10px;
   padding: 30px 50px
