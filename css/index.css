@@ -431,7 +431,7 @@ h6 {
 }
 
 .btn-primary {
-  background-color: var(--btn-primary);
+  background-color: #179d93;
   border: none;
   color: var(--btn-primary-text)
 }
@@ -10832,7 +10832,7 @@ span.redbg {
 
 .btn-primary:focus,
 .btn-primary:hover {
-  background-color: #012123;
+  background-color: #4b01d4;
 }
 
 .cta-buttons a.btn-link {
