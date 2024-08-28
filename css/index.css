@@ -5832,7 +5832,7 @@ main:not(.cta-fixed) .pcs-cta {
 
 .order-tracking {
   position: relative;
-  background: url('images/bangalore.svg');
+  background: #231f20;
   color: #fff;
   padding: 30px 80px 100px 80px;
   margin-bottom: -120px
