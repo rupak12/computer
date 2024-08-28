@@ -1698,7 +1698,7 @@ body:not(.single-product) .whb-overcontent:not(.whb-sticked) .whb-row:not(.whb-w
 }
 
 .wd-header-cats .menu-opener.color-scheme-light {
-  color: #fff
+  color: #000000
 }
 
 .wd-header-cats .menu-opener:not(.has-bg) {
@@ -2269,7 +2269,8 @@ body {
 }
 
 button.searchsubmit {
-  background: #4b01d4 !important;
+  background: #ffffff !important;
+  color:black;
 }
 
 .shipicon svg {
@@ -2305,7 +2306,7 @@ a.wd-logo.wd-main-logo img {
 span.menu-opener.color-scheme-light {
   border-radius: 0 !important;
   /* background: #09a1a6 !important; */
-  background: #4b01d4 !important;
+  background: #ffffff !important;
 
 }
 
@@ -2319,8 +2320,8 @@ ul#menu-header-main-menu {
 
 .whb-row .whb-eyi35wj5v52my2hec8de.wd-tools-element .wd-tools-inner,
 .whb-row .whb-eyi35wj5v52my2hec8de.wd-tools-element>a>.wd-tools-icon {
-  color: #fff;
-  background-color: #4b01d4 !important;
+  color: #000;
+  background-color: #ffffff !important;
 }
 
 .wd-tools-element:is(.wd-design-6, .wd-design-7, .wd-design-8) .wd-tools-count {

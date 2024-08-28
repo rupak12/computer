@@ -2840,7 +2840,7 @@ nav[class*="-pagination"] a:hover {
   margin-bottom: 10px;
 }
 .searchform[class*="wd-style-with-bg"] .searchsubmit {
-  color: #fff;
+  color: #000000;
   background-color: var(--wd-primary-color);
 }
 .searchform[class*="wd-style-with-bg"] .searchsubmit:hover {
