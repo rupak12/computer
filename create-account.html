@@ -1475,7 +1475,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-
+    <script>    
+        $('#menutoggle').on('click', function(e) {
+          $('.mobile-nav').toggleClass("wd-opened");
+          e.preventDefault();
+        });
+        
+    </script>
 </body>
 
 </html>

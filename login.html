@@ -1131,7 +1131,13 @@
 
     </script>
 
-
+<script>    
+   $('#menutoggle').on('click', function(e) {
+     $('.mobile-nav').toggleClass("wd-opened");
+     e.preventDefault();
+   });
+   
+</script>
 
 </body>
 
