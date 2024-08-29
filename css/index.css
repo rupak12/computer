@@ -10791,7 +10791,8 @@ span.redbg {
   display: block;
   width: 300px;
   overflow: hidden;
-  color: #09a1a6;
+  /* color: #09a1a6; */
+  color:white;
 }
 
 .cta-buttons a.btn-link {
