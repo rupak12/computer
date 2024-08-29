@@ -3000,8 +3000,8 @@ img-2 {
 .blog .blog-teaser .teaser-card .cta-buttons a {
   font-family: var(--btn-font);
   font-size: 20px;
-  display: flex;
-  align-items: center
+  /* display: flex; */
+  /* align-items: center */
 }
 
 .blog .blog-teaser .teaser-card .cta-buttons a .icon {
@@ -3790,11 +3790,11 @@ img-2 {
 
 .components {
   padding: 60px 0;
-  min-height: 600px;
+  min-height: 200px;
   background: #fff;
   background: -moz-linear-gradient(180deg, #fff 0, #feda3f 100%);
   background: -webkit-linear-gradient(180deg, #fff 0, #feda3f 100%);
-  background: linear-gradient(180deg, #fff 0, #feda3f 100%)
+  background: linear-gradient(180deg, #fff 0, #179d93 100%);
 }
 
 .components .components-content {
@@ -10783,7 +10783,7 @@ span.redbg {
 }
 
 .cta-buttons a {
-  background: #010f10;
+  background: #09a1a6;
   text-decoration: none;
   border-bottom: 0 !important;
   border-radius: 10px;

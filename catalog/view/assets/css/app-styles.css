@@ -3044,8 +3044,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 .blog .blog-teaser .teaser-card .cta-buttons a{
     font-family: var(--btn-font);
     font-size: 20px;
-   display: flex;
-   align-items: center
+   /* display: flex; */
+   /* align-items: center */
 }
 
 .blog .blog-teaser .teaser-card .cta-buttons a .icon{
