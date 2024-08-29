@@ -42,6 +42,38 @@
       .ctn-wrapper {
           /*display: flex;*/
       }
+      .nav__card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pc-specs {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.pc-specs .spec-item {
+    margin-bottom: 10px;
+}
+
+.pc-specs .spec-title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.spec-list li {
+  font-size: 10px;
+}
 
       .ctn-wrapper .ctn-static-txt {
           color: #ffffff;
@@ -65,7 +97,10 @@
           top: 0;
           animation: slide 12s steps(4) infinite;
       }
+      .solutions .nav__card .btn {
 
+    background-color: #179d93;
+}
       @keyframes slide {
           100% {
               top: -360px;
@@ -663,489 +698,373 @@
                     </div>
                 </div>
             </section>
-            
-            <section class="products pcs">
-            
-                <div class="layout-fixed">    
-                <div class="products-container">
-                    <div class="product-view list-view">
+            <section id="mvp-solutions" class="section solutions">
+                <div class="container">
+                  
+                      <div class="solutions__nav">
+                         <div class="nav__card">
+                            <div class="card-app-icons">
+                                <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                               <span class="card__title__text">Cameron</span>
+                            </div>
+                            <div class="pc-specs" style="display: flex; justify-content: space-between; padding: 7px 7px;">
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">CPU</span>
+                                        <ul class="spec-list">
+                                            <li>Core i7 - 14700K upto 5.6 Ghz</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">MOTHER BOARD</span>
+                                        <ul class="spec-list">
+                                            <li>MSI - Z790 A Pro WiFi DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">GPU</span>
+                                        <ul class="spec-list">
+                                            <li>RTX 4070ti Super - Zotac Trinity Black</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">RAM</span>
+                                        <ul class="spec-list">
+                                            <li>16x2 - GSkill Ripjaws S5 6000Mhz CL36 32GB DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">VIEW</a>
+                            
+                         </div>
+                         <div class="nav__card">
+                            <div class="card-app-icons">
+                                <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                               <span class="card__title__text">Snyder</span>
+                            </div>
+                            <div class="pc-specs" style="display: flex; justify-content: space-between; padding: 7px 7px;">
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">CPU</span>
+                                        <ul class="spec-list">
+                                            <li>Core i7 - 14700K upto 5.6 Ghz</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">MOTHER BOARD</span>
+                                        <ul class="spec-list">
+                                            <li>MSI - Z790 A Pro WiFi DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">GPU</span>
+                                        <ul class="spec-list">
+                                            <li>RTX 4070ti Super - Zotac Trinity Black</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">RAM</span>
+                                        <ul class="spec-list">
+                                            <li>16x2 - GSkill Ripjaws S5 6000Mhz CL36 32GB DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">VIEW</a>
+                         </div>
+                         <div class="nav__card">
+                            <div class="card-app-icons">
+                                <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                               <span class="card__title__text">Lucas</span>
+                            </div>
+                            <div class="pc-specs" style="display: flex; justify-content: space-between; padding: 7px 7px;">
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">CPU</span>
+                                        <ul class="spec-list">
+                                            <li>Core i7 - 14700K upto 5.6 Ghz</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">MOTHER BOARD</span>
+                                        <ul class="spec-list">
+                                            <li>MSI - Z790 A Pro WiFi DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">GPU</span>
+                                        <ul class="spec-list">
+                                            <li>RTX 4070ti Super - Zotac Trinity Black</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">RAM</span>
+                                        <ul class="spec-list">
+                                            <li>16x2 - GSkill Ripjaws S5 6000Mhz CL36 32GB DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">VIEW</a>
+                         </div>
+                       
+                         
+                         <div class="nav__card">
+                            <div class="card-app-icons">
+                                <div id="carouselExample4" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                               <span class="card__title__text">Raimi</span>
+                            </div>
+                            <div class="pc-specs" style="display: flex; justify-content: space-between; padding: 7px 7px;">
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">CPU</span>
+                                        <ul class="spec-list">
+                                            <li>Core i7 - 14700K upto 5.6 Ghz</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">MOTHER BOARD</span>
+                                        <ul class="spec-list">
+                                            <li>MSI - Z790 A Pro WiFi DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">GPU</span>
+                                        <ul class="spec-list">
+                                            <li>RTX 4070ti Super - Zotac Trinity Black</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">RAM</span>
+                                        <ul class="spec-list">
+                                            <li>16x2 - GSkill Ripjaws S5 6000Mhz CL36 32GB DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">VIEW</a>
+                         </div>
+                         <div class="nav__card">
+                            <div class="card-app-icons">
+                                <div id="carouselExample5" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                               <span class="card__title__text">Snyder</span>
+                            </div>
+                            <div class="pc-specs" style="display: flex; justify-content: space-between; padding: 7px 7px;">
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">CPU</span>
+                                        <ul class="spec-list">
+                                            <li>Core i7 - 14700K upto 5.6 Ghz</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">MOTHER BOARD</span>
+                                        <ul class="spec-list">
+                                            <li>MSI - Z790 A Pro WiFi DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">GPU</span>
+                                        <ul class="spec-list">
+                                            <li>RTX 4070ti Super - Zotac Trinity Black</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">RAM</span>
+                                        <ul class="spec-list">
+                                            <li>16x2 - GSkill Ripjaws S5 6000Mhz CL36 32GB DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">VIEW</a>
+                         </div>
+                         <div class="nav__card">
+                            <div class="card-app-icons">
+                                <div id="carouselExample6" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="catalog/view/assets/img/expo-b-min.webp" class="d-block w-100 app-icon" alt="Slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                                <span class="card__title__text">Cameron</span>
+                            </div>
+                            <div class="pc-specs" style="display: flex; justify-content: space-between; padding: 7px 7px;">
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">CPU</span>
+                                        <ul class="spec-list">
+                                            <li>Core i7 - 14700K upto 5.6 Ghz</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">MOTHER BOARD</span>
+                                        <ul class="spec-list">
+                                            <li>MSI - Z790 A Pro WiFi DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="flex: 1;">
+                                    <div class="spec-item">
+                                        <span class="spec-title">GPU</span>
+                                        <ul class="spec-list">
+                                            <li>RTX 4070ti Super - Zotac Trinity Black</li>
+                                        </ul>
+                                    </div>
+                                    <div class="spec-item">
+                                        <span class="spec-title">RAM</span>
+                                        <ul class="spec-list">
+                                            <li>16x2 - GSkill Ripjaws S5 6000Mhz CL36 32GB DDR5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">VIEW</a>
+                        </div>
                         
-                                                
-                        <div class="product">
-                           
-                            <div class="product-image-wrapper">
-                                <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Cameron" class="product-image image__link">
-                                   <img src="https://themvp.in/image/cache/catalog/1.%20Cases/cse073%20-%20Lian%20Li%20-%20Lancool%20216%20Black_14_11zon-248x296.jpg" alt="Cameron" title="Cameron"> 
-                                </a>
-                            </div>
-                            <div class="product-content-wrapper">
-                                <div class="product-content">
-                                    <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Cameron"><h5 class="product-title">Cameron</h5></a>
-                                    <div class="pc-specs">
-                                        <div class="spec-item">
-                                            <span class="spec-title">CPU</span>
-                                            <ul class="spec-list">
-                                                <li>Ryzen9 - 7900X upto 5.6 Ghz</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">Mother board</span>
-                                            <ul class="spec-list">
-                                                <li>Gigabyte - X670 Aorus Elite AX</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">GPU</span>
-                                            <ul class="spec-list">
-                                                <li>RTX 4060ti - Inno3d Twin x2 8GB</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">RAM</span>
-                                            <ul class="spec-list">
-                                                <li>16x2 - Gskill Flare 6000MHz CL36 32GB DDR5 (AMD EXPO)</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pc-score">
-                                        <ul>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">CinebenchR20 Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>CinebenchR20 <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">29538</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">3D mark Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>3D mark <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">13862</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    
-                                                    <div class="d-flex">
-                                                        <span class="me-2">MVP Score </span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>THEMVP <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">Casual</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-cta">
-                                        <div class="product-price">
-                                            <div class="current-value">
-                                                <!-- <span class="currancy">₹</span> -->
-                                                <span class="value-text">₹158,093.00</span>
-                                            </div>
-                                        </div>
-                                        <div class="cta-buttons">
-                                            <!--<button type="button" onclick="cart.add('2110', '1');" class="btn btn-primary">Add to Cart</button>-->
-                                            <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Cameron" class="btn btn-primary">View</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end product -->
-                                            
-                        <div class="product">
-                           
-                            <div class="product-image-wrapper">
-                                <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Snyder" class="product-image image__link">
-                                   <img src="https://themvp.in/image/cache/catalog/1.%20Cases/cse073%20-%20Lian%20Li%20-%20Lancool%20216%20Black_14_11zon-248x296.jpg" alt="Snyder" title="Snyder"> 
-                                </a>
-                            </div>
-                            <div class="product-content-wrapper">
-                                <div class="product-content">
-                                    <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Snyder"><h5 class="product-title">Snyder</h5></a>
-                                    <div class="pc-specs">
-                                        <div class="spec-item">
-                                            <span class="spec-title">CPU</span>
-                                            <ul class="spec-list">
-                                                <li>Core i7 - 14700K upto 5.6 Ghz</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">Mother board</span>
-                                            <ul class="spec-list">
-                                                <li>MSI - Z790 A Pro WiFi DDR5</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">GPU</span>
-                                            <ul class="spec-list">
-                                                <li>RTX 4070ti Super - Zotac Trinity Black 16GB</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">RAM</span>
-                                            <ul class="spec-list">
-                                                <li>16x2 - Gskill Ripjaws S5 6000Mhz CL36 32GB DDR5</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pc-score">
-                                        <ul>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">CinebenchR20 Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>CinebenchR20 <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">35196</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">3D mark Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>3D mark <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">15159</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    
-                                                    <div class="d-flex">
-                                                        <span class="me-2">MVP Score </span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>THEMVP <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">Pro</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-cta">
-                                        <div class="product-price">
-                                            <div class="current-value">
-                                                <!-- <span class="currancy">₹</span> -->
-                                                <span class="value-text">₹198,475.00</span>
-                                            </div>
-                                        </div>
-                                        <div class="cta-buttons">
-                                            <!--<button type="button" onclick="cart.add('2056', '1');" class="btn btn-primary">Add to Cart</button>-->
-                                            <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Snyder" class="btn btn-primary">View</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end product -->
-                                            
-                        <div class="product">
-                           
-                            <div class="product-image-wrapper">
-                                <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Lucas" class="product-image image__link">
-                                   <img src="https://themvp.in/image/cache/catalog/1.%20Cases/cse077%20-%20Lian%20Li%20-%20Lancool%203R-X%20Black%20RGB-248x296.jpg" alt="Lucas" title="Lucas"> 
-                                </a>
-                            </div>
-                            <div class="product-content-wrapper">
-                                <div class="product-content">
-                                    <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Lucas"><h5 class="product-title">Lucas</h5></a>
-                                    <div class="pc-specs">
-                                        <div class="spec-item">
-                                            <span class="spec-title">CPU</span>
-                                            <ul class="spec-list">
-                                                <li>Core i9 - 13900K upto 5.80 Ghz</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">Mother board</span>
-                                            <ul class="spec-list">
-                                                <li>MSI - MAG Z790 TOMAHAWK WIFI DDR5</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">GPU</span>
-                                            <ul class="spec-list">
-                                                <li>RTX 4080 Super - Zotac Trinity Black 16GB</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">RAM</span>
-                                            <ul class="spec-list">
-                                                <li>32x2 - GSkill Ripjaws S5 6000MHz CL36 64GB DDR5</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pc-score">
-                                        <ul>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">CinebenchR20 Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>CinebenchR20 <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">40417</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">3D mark Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>3D mark <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">28766</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    
-                                                    <div class="d-flex">
-                                                        <span class="me-2">MVP Score </span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>THEMVP <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">God Mode</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-cta">
-                                        <div class="product-price">
-                                            <div class="current-value">
-                                                <!-- <span class="currancy">₹</span> -->
-                                                <span class="value-text">₹271,406.00</span>
-                                            </div>
-                                        </div>
-                                        <div class="cta-buttons">
-                                            <!--<button type="button" onclick="cart.add('2057', '1');" class="btn btn-primary">Add to Cart</button>-->
-                                            <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Lucas" class="btn btn-primary">View</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end product -->
-                                            
-                        <div class="product">
-                           
-                            <div class="product-image-wrapper">
-                                <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Raimi" class="product-image image__link">
-                                   <img src="https://themvp.in/image/cache/catalog/1.%20Cases/cse052---Fractal-Design---Meshify-Mini-C-TG-248x296.png" alt="Raimi" title="Raimi"> 
-                                </a>
-                            </div>
-                            <div class="product-content-wrapper">
-                                <div class="product-content">
-                                    <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Raimi"><h5 class="product-title">Raimi</h5></a>
-                                    <div class="pc-specs">
-                                        <div class="spec-item">
-                                            <span class="spec-title">CPU</span>
-                                            <ul class="spec-list">
-                                                <li>Threadripper Pro - 5965WX Upto 4.5Ghz</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">Mother board</span>
-                                            <ul class="spec-list">
-                                                <li>Asus - WRX80 Sage SE WiFi</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">GPU</span>
-                                            <ul class="spec-list">
-                                                <li>RTX 4080 Super - Zotac Amp Extreme Airo 16GB</li>
-                                            </ul>
-                                        </div>
-                                        <div class="spec-item">
-                                            <span class="spec-title">RAM</span>
-                                            <ul class="spec-list">
-                                                <li>64X2 - Hynix Ecc Memory 3200MHz 128GB</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pc-score">
-                                        <ul>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">CinebenchR20 Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>CinebenchR20 <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">40535</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    <div class="d-flex">
-                                                        <span class="me-2">3D mark Score</span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>3D mark <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">28766</span>
-                                            </li>
-                                            <li>
-                                                <span class="site-name">
-                                                    
-                                                    <div class="d-flex">
-                                                        <span class="me-2">MVP Score </span>
-                                                            <div class="custom-drop dropup">
-                                                                <button type="button" class="btn btn-link no-border dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                                                <img src="catalog/view/assets/img/icon-info.png" class="icon m-0">
-                                                              </button>
-                                                    
-                                                            <div class="dropdown-menu dropdown-menu-lg-end p-4 shadow-lg">
-                                                                <h6>THEMVP <span class=" title__graident graident__4">Scoring</span></h6>
-                                                              <div class="mt-3">
-                                                                <a href="/scoring-method" class="fw-4 link-dark"><u>Click to read</u> more about our scoring here.</a> 
-                                                              </div>
-                                                            </div>  
-                                                            </div> 
-                                                    </div>
-                                                </span>
-                                                <span class="score">God Mode</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-cta">
-                                        <div class="product-price">
-                                            <div class="current-value">
-                                                <!-- <span class="currancy">₹</span> -->
-                                                <span class="value-text">₹551,578.00</span>
-                                            </div>
-                                        </div>
-                                        <div class="cta-buttons">
-                                            <!--<button type="button" onclick="cart.add('2111', '1');" class="btn btn-primary">Add to Cart</button>-->
-                                            <a href="https://themvp.in/video-editing-pc/adobe-after-effects/workstation-Raimi" class="btn btn-primary">View</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end product -->
-                                        
-                    </div>
-                </div>
-                
-                                </div>
-            </section>
-
-            <!-- solutions products content -->
+                      </div>
+                      
+                   </div>
+             </section>
+    
                          
             
             
@@ -1189,6 +1108,7 @@
                 
             </div>
         </section>
+        
         <section class="blog">
             <div class="container layout-fixed">
                 <div class="row justify-content-center">
@@ -1210,7 +1130,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                                                                        <div class="teaser-card">
+                                      <div class="teaser-card">
                                     <p class="card-title">Warranty &amp; Service Process</p>
                                     <p>Let's talk about the one thing we all dread - computer malfunctions. It's frustrating when your PC isn't functioning properly and it's affecting your work or personal usage. But fret not, at TheMVP, we've got your back with our hassle-free warranty process.</p>
                                     <div class="cta-buttons">
@@ -1219,24 +1139,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                                                                        <div class="teaser-card">
+                                     <div class="teaser-card">
                                     <p class="card-title">What is theMVP all about?</p>
-                                    <p>We happen to build the fastest Custom PC builders in India. We build them mean and build them fast for gamers, speed demons, content creators, data scientists, and just about anyone who wants the latest and greatest in tech.</p>
+                                    <p>We happen to build the fastest Custom PC builders in India. We build them mean and build them fast for gamers, speed demons, content creators, data scientists, and just about anyone who wants the latest and greatest in tech.greatest in tech.</p>
                                     <div class="cta-buttons">
                                         <div class="mt-4">
                                             <a href="" class="btn btn-primary">Read More</a>
                                         </div>
                                     </div>
                                 </div>
-                              <div class="teaser-card">
+                              <!-- <div class="teaser-card">
                                     <p class="card-title">Our Quality Process</p>
-                                    <p>From handpicking the best components to rigorous testing and quality control, we strive to deliver a top-notch product that meets the unique needs of each customer</p>
+                                    <p>From handpicking the best components to rigorous testing and quality control, we strive to deliver a top-notch product that meets the unique needs of each customer a top-notch product that meets the unique needs of each customer greatest in tech. greatest in tech.</p>
                                     <div class="cta-buttons">
                                         <div class="mt-4">
                                             <a href="" class="btn btn-primary">Read More</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                                     </div>
                     </div>
                 </div><!-- End row -->
