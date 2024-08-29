@@ -11250,7 +11250,7 @@ section.blog.media .title {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(255 255 255);
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   backdrop-filter: blur(10px);
 }
