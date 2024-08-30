@@ -1811,273 +1811,62 @@ Number.prototype.toCurrencyString = function(){
   </div>
 </div>
     
-       <!-- Java Script -->
-
-    <script src="catalog/view/assets/js/jquery-1.12.4.min.js"></script>    
+    <!-- Java Script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="catalog/view/assets/js/jquery-1.12.4.min.js"></script>
     <!-- <script src="catalog/view/assets/js/vendor.min.js"></script> -->
 
     <script src="catalog/view/assets/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="catalog/view/assets/js/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/ScrollToPlugin.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="catalog/view/assets/vendors/side-menu/slide-menu.js"></script>
-    <script type="text/javascript" src="catalog/view/assets/vendors/swiper/swiper-bundle.min.js"></script> 
+    <script type="text/javascript" src="catalog/view/assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="catalog/view/assets/vendors/fancybox/jquery.fancybox.min.js"></script>
-    
+
     <script src="catalog/view/assets/js/wow.min.js"></script>
-    
-    
-    
+
+
+
     <!-- Performance Slider -->
     <link href="catalog/view/assets/vendors/velocity/number-pb.css" rel="stylesheet" type="text/css" />
     <script src="catalog/view/assets/vendors/velocity/jquery.velocity.min.js"></script>
     <script src="catalog/view/assets/vendors/velocity/number-pb.js"></script>
-    
+
     <script type="text/javascript" src="catalog/view/assets/js/main.js"></script>
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
     <script src="catalog/view/assets/js/form-validation.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-   
+
     <script>
         feather.replace();
-        $('[data-bs-toggle="tooltip"]').tooltip();            
+        $('[data-bs-toggle="tooltip"]').tooltip();
 
     </script>
-        
-      <script id="rendered-js" >
 
-            const wrap = document.querySelector(".options-sec");
-            const expa = document.querySelector(".exp-a");
-            const expb = document.querySelector(".exp-b");
-            const expc = document.querySelector(".exp-c");
-          const dur = 0.6;
-
-//     let tl1 = gsap.timeline({
-//       reversed: true,
-//     });
-//     let tl2 = gsap.timeline({
-//       reversed: true,
-//     });
-
-//     tl1
-//       .fromTo(".img-1", {width: "50%" }, { duration: dur, width: "60%" })
-//       .fromTo(".img-2", {width: "50%" }, { duration: dur, width: "40%" }, "<");
-
-//     tl2
-//       .to(".img-2", { duration: dur, width: "60%" })
-//       .to(".img-1", { duration: dur, width: "40%" }, "<");
-//
-//        gsap.set(".exp-a", { width: "33.3%" });
-//        gsap.set(".exp-b", { width: "33.3%" });
-//        gsap.set(".exp-c", { width: "33.3%" });
-
-        $(".exp-a").click(function(){
-          gsap.to(".exp-a", { className: "sec-col exp-a expand open"});
-          gsap.to(".exp-b", { className: "sec-col exp-b expand close" });
-          gsap.to(".exp-c", { className: "sec-col exp-c expand close" });
-
-        });
-          
-          $(".exp-b").click(function(){
-          gsap.to(".exp-a", { className: "sec-col exp-a expand close"});
-          gsap.to(".exp-b", { className: "sec-col exp-b expand open" });
-          gsap.to(".exp-c", { className: "sec-col exp-c expand close" });
-
-        });
-          
-          $(".exp-c").click(function(){
-          gsap.to(".exp-a", { className: "sec-col exp-a expand close"});
-          gsap.to(".exp-b", { className: "sec-col exp-b expand close" });
-          gsap.to(".exp-c", { className: "sec-col exp-c expand open" });
-
-        });
-          
-          
-          
-//          wrap.addEventListener("mouseleave", () => {
-//          gsap.to(".exp-a", { duration: 1, width: "33.3%" });
-//          gsap.to(".exp-b", { duration: 1, width: "33.3%" });
-//          gsap.to(".exp-c", { duration: 1, width: "33.3%" });
-//
-//        });
-          
-          const box = document.querySelector(".exp-a");
-          
-          box.addEventListener("mouseenter",function(){
-          const move = "";
-          this.classList.add(move);
-
-          this.addEventListener("animationend",function(){
-            this.classList.remove(move);
-          });
-
-          this.addEventListener("mouseleave",function(){
-            this.classList.remove(move);
-          });
-  
-});
-          
+<script>    
+   $('#menutoggle').on('click', function(e) {
+     $('.mobile-nav').toggleClass("wd-opened");
+     e.preventDefault();
+   });
+   
 </script>
 
-        <!-- 
-
-        Keyword: footer links turn into accordion for mobile
-        
-        https://stackoverflow.com/questions/63113617/how-to-create-accordion-menu-footer-for-mobile-only
-
-        -->
-    <script type="text/javascript">
-        $('#prod_search').bind("keypress", function(e) {
-            //alert("search");
-            if (e.keyCode == 13) {
-                var url = $('base').attr('href') + 'index.php?route=product/search';
-
-                var value = $('#prod_search').val();
-
-                if (value) {
-                    url += '&search=' + encodeURIComponent(value);
-                }
-
-                location = url;
-            }
-        });
-
-        $('#submit_search').on('click', function(e) {
-            var url = $('base').attr('href') + 'index.php?route=product/search';
-
-            var value = $('#prod_search').val();
-
-            if (value) {
-                url += '&search=' + encodeURIComponent(value);
-            }
-
-            location = url;
-        });
-
-        $('#submit_search2').on('click', function(e) {
-            var url = $('base').attr('href') + 'index.php?route=product/search';
-
-            var value = $('#prod_search2').val();
-
-            if (value) {
-                url += '&search=' + encodeURIComponent(value);
-            }
-
-            location = url;
-        });
-
-        $('#no_search_submit').on('click', function(e) {
-            var url = $('base').attr('href') + 'index.php?route=product/search';
-
-            var value = $('#no_search_id').val();
-
-            if (value) {
-                url += '&search=' + encodeURIComponent(value);
-            }
-
-            location = url;
-        });
-
-    </script>
-    
-    
-       
-<!-- Grid Masonry -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-<script>
-        $(function() {
-            var $grid = $('.grid').imagesLoaded( function() {
-              $grid.masonry({
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                columnWidth: '.grid-sizer'
-              }); 
-            });
-         });
-         
-          
-        
-       
-        
-
-    </script>
-    
-    
-<!-- Performance Slider -->
-<script>
-      $(function() {
-        
-        
-          
-//        function standardValue2(y=30) {
-//          return y;
-//        }
-//         
-
-        var controlBar = $('#performance-noise .number-pb').NumberProgressBar({
-          duration: 2000,
-          min: 0,
-          max: 46,
-          current: 40
-        });
-          
-        var controlBar = $('#performance-gpu .number-pb').NumberProgressBar({
-          duration: 2500,
-          min: 0,
-          max: 72,
-          current: 51
-        });
-          
-        var controlBar = $('#performance-cpu .number-pb').NumberProgressBar({
-          duration: 3000,
-          min: 0,
-          max: 75,
-          current: 63
-        });
-
-
-
-      });
-</script>
-
-
-<script>
-$(document).ready(function(){
-    $('a[href^="#"]').click(function(e) {
-        e.preventDefault();
-        var target = this.hash, $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 80
-        }, 300, 'swing', function() {
-            window.location.hash = target;
-        });
-    });
-});
-</script>
-
-<script>
-    window.onload = function() {
-        let key    = 'IX72o9';
-        let amount = $('#product_price_value').attr('data-value');
-        console.log(amount);
-        //let amount = 83665;
-        const widgetConfig = {
-            "key": key,
-            "amount": amount,
-        };
-        payuAffordability.init(widgetConfig);
-    }
-</script>
-        
 </body>
+
 </html>
