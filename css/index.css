@@ -4383,7 +4383,7 @@ main:not(.cta-fixed) .pcs-cta {
 
 .key-information {
   position: relative;
-  background: #181818 url(../img/bg-lines.png) no-repeat 0 0;
+  background: #179d93 url(../img/bg-lines.png) no-repeat 0 0;
   background-size: cover;
   padding: 0 0 100px 0
 }

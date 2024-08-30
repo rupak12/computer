@@ -36,48 +36,49 @@
 
 </head>
 
-<!-- Animation Code -->
-<style type="text/css">
-    .ctn-wrapper {
-        /*display: flex;*/
-    }
+    <!-- Animation Code -->
+    <style type="text/css">
+      
+      .ctn-wrapper {
+          /*display: flex;*/
+      }
 
-    .ctn-wrapper .ctn-static-txt {
-        color: #ffffff;
-        font-size: 3.75rem;
-        font-weight: 400;
-    }
+      .ctn-wrapper .ctn-static-txt {
+          color: #ffffff;
+          font-size: 3.75rem;
+          font-weight: 400;
+      }
 
-    .ctn-wrapper .ctn-dynamic-txts {
-        margin-left: 15px;
-        height: 90px;
-        line-height: 90px;
-        overflow: hidden;
-    }
+      .ctn-wrapper .ctn-dynamic-txts {
+          margin-left: 15px;
+          height: 90px;
+          line-height: 90px;
+          overflow: hidden;
+      }
 
-    .ctn-dynamic-txts li {
-        list-style: none;
-        color: #212529;
-        font-size: 80px;
-        font-weight: 500;
-        position: relative;
-        top: 0;
-        animation: slide 12s steps(4) infinite;
-    }
+      .ctn-dynamic-txts li {
+          list-style: none;
+          color: #212529;
+          font-size: 80px;
+          font-weight: 500;
+          position: relative;
+          top: 0;
+          animation: slide 12s steps(4) infinite;
+      }
 
-    @keyframes slide {
-        100% {
-            top: -360px;
-        }
-    }
+      @keyframes slide {
+          100% {
+              top: -360px;
+          }
+      }
 
-    .ctn-dynamic-txts li span {
-        position: relative;
-        margin: 5px 0;
-        line-height: 90px;
-    }
+      .ctn-dynamic-txts li span {
+          position: relative;
+          margin: 5px 0;
+          line-height: 90px;
+      }
 
-    .ctn-dynamic-txts li span::after {
+      .ctn-dynamic-txts li span::after {
         content: "";
         position: absolute;
         left: 0;
@@ -86,193 +87,176 @@
         background: #fffae5;
         /*border-left: 2px solid #212529;*/
         animation: typing 3s steps(10) infinite;
-    }
+      }
 
-    @keyframes typing {
+      @keyframes typing {
+          40%,
+          60% {
+              left: calc(100% + 30px);
+          }
 
-        40%,
-        60% {
-            left: calc(100% + 30px);
+          100% {
+              left: 0;
+          }
+      }
+
+      @media only screen and (max-width:768px){
+        .ctn-dynamic-txts li span::after{
+          background: #fffef8 !important;
+          height: 160% !important;
         }
-
-        100% {
-            left: 0;
+        .ctn-dynamic-txts li{  
+          font-size: 30px !important;
         }
-    }
-
-    @media only screen and (max-width:768px) {
-        .ctn-dynamic-txts li span::after {
-            background: #fffef8 !important;
-            height: 160% !important;
-        }
-
-        .ctn-dynamic-txts li {
-            font-size: 30px !important;
-        }
-
         .ctn-wrapper .ctn-dynamic-txts {
-            margin-left: 0px !important;
-            padding-left: 0px !important;
+          margin-left: 0px !important;
+          padding-left: 0px !important;
         }
+        
+      }
 
-    }
-</style>
+    </style>
 
-<!-- Animation code  -->
+    <!-- Animation code  -->
 
-<!-- About us moniter typing code -->
+    <!-- About us moniter typing code -->
 
-<style type="text/css">
-    @media only screen and (max-width:768px) {
-        #typeWriter {
-            font-size: 18px !important;
+    <style type="text/css">
+      
+      @media only screen and (max-width:768px){
+        #typeWriter{
+          font-size: 18px !important; 
         }
-    }
-</style>
+      }
 
-<!-- About us moniter typing code -->
+    </style>
 
-<style>
-    .n-items {
-        font-size: 10px;
-        color: #000;
-        background: #feda2a;
-        display: block;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        position: absolute;
+    <!-- About us moniter typing code -->
 
-        line-height: 1.3;
-        text-align: center;
-        overflow: hidden;
-        font-weight: 800;
-    }
-</style>
-<style type="text/css">
+    <style>
+        .n-items {
+            font-size: 10px;
+            color: #000;
+            background: #feda2a;
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            
+            line-height: 1.3;
+            text-align: center;
+            overflow: hidden;
+            font-weight: 800;
+        }
+        
+    </style>
+    <style type="text/css">
     /*for html spanner*/
 
-    .lds-roller {
-        display: inline-block;
-        position: relative;
-        width: 80px;
-        height: 80px;
-    }
-
-    .lds-roller div {
-        animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-        transform-origin: 40px 40px;
-    }
-
-    .lds-roller div:after {
-        content: " ";
-        display: block;
-        position: absolute;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #fff;
-        margin: -4px 0 0 -4px;
-    }
-
-    .lds-roller div:nth-child(1) {
-        animation-delay: -0.036s;
-    }
-
-    .lds-roller div:nth-child(1):after {
-        top: 63px;
-        left: 63px;
-    }
-
-    .lds-roller div:nth-child(2) {
-        animation-delay: -0.072s;
-    }
-
-    .lds-roller div:nth-child(2):after {
-        top: 68px;
-        left: 56px;
-    }
-
-    .lds-roller div:nth-child(3) {
-        animation-delay: -0.108s;
-    }
-
-    .lds-roller div:nth-child(3):after {
-        top: 71px;
-        left: 48px;
-    }
-
-    .lds-roller div:nth-child(4) {
-        animation-delay: -0.144s;
-    }
-
-    .lds-roller div:nth-child(4):after {
-        top: 72px;
-        left: 40px;
-    }
-
-    .lds-roller div:nth-child(5) {
-        animation-delay: -0.18s;
-    }
-
-    .lds-roller div:nth-child(5):after {
-        top: 71px;
-        left: 32px;
-    }
-
-    .lds-roller div:nth-child(6) {
-        animation-delay: -0.216s;
-    }
-
-    .lds-roller div:nth-child(6):after {
-        top: 68px;
-        left: 24px;
-    }
-
-    .lds-roller div:nth-child(7) {
-        animation-delay: -0.252s;
-    }
-
-    .lds-roller div:nth-child(7):after {
-        top: 63px;
-        left: 17px;
-    }
-
-    .lds-roller div:nth-child(8) {
-        animation-delay: -0.288s;
-    }
-
-    .lds-roller div:nth-child(8):after {
-        top: 56px;
-        left: 12px;
-    }
-
-    @keyframes lds-roller {
-        0% {
+        .lds-roller {
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
+        }
+        .lds-roller div {
+          animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          transform-origin: 40px 40px;
+        }
+        .lds-roller div:after {
+          content: " ";
+          display: block;
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #fff;
+          margin: -4px 0 0 -4px;
+        }
+        .lds-roller div:nth-child(1) {
+          animation-delay: -0.036s;
+        }
+        .lds-roller div:nth-child(1):after {
+          top: 63px;
+          left: 63px;
+        }
+        .lds-roller div:nth-child(2) {
+          animation-delay: -0.072s;
+        }
+        .lds-roller div:nth-child(2):after {
+          top: 68px;
+          left: 56px;
+        }
+        .lds-roller div:nth-child(3) {
+          animation-delay: -0.108s;
+        }
+        .lds-roller div:nth-child(3):after {
+          top: 71px;
+          left: 48px;
+        }
+        .lds-roller div:nth-child(4) {
+          animation-delay: -0.144s;
+        }
+        .lds-roller div:nth-child(4):after {
+          top: 72px;
+          left: 40px;
+        }
+        .lds-roller div:nth-child(5) {
+          animation-delay: -0.18s;
+        }
+        .lds-roller div:nth-child(5):after {
+          top: 71px;
+          left: 32px;
+        }
+        .lds-roller div:nth-child(6) {
+          animation-delay: -0.216s;
+        }
+        .lds-roller div:nth-child(6):after {
+          top: 68px;
+          left: 24px;
+        }
+        .lds-roller div:nth-child(7) {
+          animation-delay: -0.252s;
+        }
+        .lds-roller div:nth-child(7):after {
+          top: 63px;
+          left: 17px;
+        }
+        .lds-roller div:nth-child(8) {
+          animation-delay: -0.288s;
+        }
+        .lds-roller div:nth-child(8):after {
+          top: 56px;
+          left: 12px;
+        }
+        @keyframes lds-roller {
+          0% {
             transform: rotate(0deg);
-        }
-
-        100% {
+          }
+          100% {
             transform: rotate(360deg);
+          }
         }
-    }
-
-    #spinner_container {
-        background-color: rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
-</style>
+        #spinner_container {
+          background-color: rgba(0,0,0,0.5);
+          position: fixed;
+          top: 0;
+          width: 100%;
+          height: 100vh;
+          z-index: 9999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display: none;
+        }
+    </style>
 
 <body class="wrapper">
-
+ 
+    
+        
+   
     <section class="headerwrapper">
         <header class="whb-header whb-header_171341 whb-sticky-shadow whb-scroll-stick whb-sticky-real whb-hide-on-scroll">
            <div class="whb-main-header">
@@ -665,95 +649,842 @@
            </div>
         </div>
      </section>
-    <main class="auth-pages" style="background: url('catalog/view/assets/img/close-up-hands-working-project.jpg');background-position: center;background-repeat: no-repeat
-    ;background-size: cover; margin-top: -41px;">
+    <div class="row">                            
+    <main>
 
-        <div class="container content-overlay">
+            <div id="notification"></div>
+            <section class="products pcs" id="product">
+            
+                    
+                <div class="pc-full-details">
+                    <div class="products-container">
+                        
+                        <div class="product">
+                            <div class="product-image-wrapper">
+                                <a class="product-image image__link">
+                                   <img src="catalog/view/assets/img/Galax - Revolution 01 Black 4-248x296.jpg" > 
+                                </a>
+                            </div>
+                            <div class="product-content-wrapper">
+                                <div class="product-content">
+                                    <h1 class="product-title">Raphael</h1>
+                                    <p class="product-brief">Unleash your creativity in Autodesk 3Ds Max with our custom PC powered by AMD 7700X and RTX 3060.</p>
+                                    <input type="hidden" name="product_id" value="2118" />
 
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-9 col-sm-8">
-                    <div class="card entry-card">
-                        <div class="card-body p-4">
-
-                            <h4 class="title"> Sign in</h4>
-                            <p class="text-muted mb-4"> I am a returning customer </p>
-
-                            <form action="https://themvp.in/index.php?route=account/login" method="post"
-                                enctype="multipart/form-data">
-                                <div class="row g-3">
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control is-invalid" name="email" value=""
-                                                id="floatingInput" placeholder="E-Mail Address" autocomplete="off">
-                                            <label for="floatingInput">Email address</label>
+                                    <div class="pc-specs key-features">
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-platform.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Platform</span>
+                                                <ul class="spec-list">
+                                                    <li>Amd</li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-cpu.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Cpu</span>
+                                                <ul class="spec-list">
+                                                    <li>  Ryzen7 - 7700X upto 5.4 Ghz                                                        <input type='hidden' id="input-option11425" name='option[11425]' value="34944" />
+                                                       </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-gpu.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Gpu</span>
+                                                <ul class="spec-list">
+                                                    <li> RTX 4060 - Inno3D Twin X2 OC 8GB                                                        <input type='hidden' id="input-option11430" name='option[11430]' value="34949" />
+       
+                                                           </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-case.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Case</span>
+                                                <ul class="spec-list">
+                                                    <li>Galax - Revolution 01 Black 4 ARGB Fans                                                        <input type='hidden' id="input-option11429" name='option[11429]' value="34948" />
 
-                                    <div class="col-12">
-                                        <div class="form-floating input-cta">
+                                                           </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-motherboard.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Motherboard</span>
+                                                <ul class="spec-list">
+                                                    <li>  MSI - B650M A Pro WiFi                                                        <input type='hidden' id="input-option11426" name='option[11426]' value="34945" />
 
-                                            <input id="enter-password" type="password" class="form-control"
-                                                name="password" value="" placeholder="Password" autocomplete="off">
-                                            <label for="floatingPassword">Password</label>
+                                                       </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-cpucoller.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Cpu Cooler</span>
+                                                <ul class="spec-list">
+                                                    <li> Corsair - H100 RGB 240MM                                                        <input type='hidden' id="input-option11427" name='option[11427]' value="34946" />
 
-                                            <div class="input-overlap password-showhide ">
-                                                <span toggle="#enter-password"
-                                                    class="mdi mdi-eye-outline field-icon toggle-password"></span>
+                                                       </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-smps.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Smps</span>
+                                                <ul class="spec-list">
+                                                    <li> Deepcool - PM750D Gold                                                            <input type='hidden' id="input-option11431" name='option[11431]' value="34950" />
+
+                                                           </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <div class="pc-specs key-features modifi">
+                                        <div class="spec-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit RAM">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-ram.svg">
+                                            </div>
+                                            <div class="content-col">
+                                               <span class="spec-title" >Ram <a href="javascript:void(0)"   class="cta-btn"><img src="catalog/view/assets/img/icon-edit.png" class="icon"></a> </span>
+                                               <!--<span class="spec-title" >Ram <a href="#" class="cta-btn"  data-bs-toggle="modal" data-bs-target="#ramModal"><img src="catalog/view/assets/img/icon-edit.png" class="icon"> </a></span>-->
 
+                                                <ul class="spec-list">
+                                                    <li id="change_16"> 16x2 - Gskill Flare 6000MHz CL36 32GB DDR5 (AMD EXPO)</li>
+                                                           <input  type='hidden'  class="change_16" id="input-option11428" price="10647.00" name='option[11428]' option_id="11428"  value="34947" />
 
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="spec-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Storage 1">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-storage.svg">
+                                            </div>
+                                            <div class="content-col" >
+                                                <span class="spec-title">Storage 1 <a  href="javascript:void(0)"  class="cta-btn"><img src="catalog/view/assets/img/icon-edit.png" class="icon"> </a> </span>
+                                                
+                                                
+                                                <ul class="spec-list">
+                                                    <li id="change_19">WD - Blue 1 TB SN 580 M.2 Nvme</li>
+                                                            <input type='hidden' class="change_19" id="input-option11432" price="6655.00" name='option[11432]' value="34951" />
 
-                                    <div class="col-12">
-                                        <div class="row justify-content-between">
-                                            <!--<div class="col-auto">
-                                                    
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                      <label class="form-check-label" for="flexCheckDefault">
-                                                        Remember me
-                                                      </label>
+                                                </ul>
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="spec-item">
+                                            <div class="icon-col">
+                                                <img class="icon icon__large" src="catalog/view/assets/img/pc-spec-icon-storage.svg">
+                                            </div>
+                                            <div class="content-col">
+                                                <span class="spec-title">Storage 2 <a  href="javascript:void(0)"   class="cta-btn"  title="Edit Storage 2"><img class="icon" src="catalog/view/assets/img/icon-edit.png"></a> </span>
+                                                <ul class="spec-list">
+                                                    <li id="change_18">WD - Blue 2TB 7200RPM</li>
+                                                            <input type='hidden' class="change_18" id="input-option11433" price="6120.00" name='option[11433]' value="40142" />
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ui-tabs">
+                                        <ul class="nav" id="pills-tab" role="tablist">
+                                          <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="tab-performance-dimensions" data-bs-toggle="pill" data-bs-target="#performance-dimensions" type="button" role="tab" aria-controls="tab-performance-dimensions" aria-selected="false">Performance & Dimensions</a>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                            <a class="nav-link " id="tab-ports-connectivity" data-bs-toggle="pill" data-bs-target="#ports-connectivity" type="button" role="tab" aria-controls="tab-ports-connectivity" aria-selected="true">Ports, Connectivity & Controls</a>
+                                          </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                          <div class="tab-pane fade " id="ports-connectivity" role="tabpanel" aria-labelledby="tab-ports-connectivity">
+                                            <!-- Swiper -->
+                                            <div class="swiper swiper-scroll">
+                                              <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                        <div class="pc-specs key-features">
+                                                            <div class="spec-item">
+                                                                <div class="content-col">
+                                                                    <span class="spec-title">Wifi</span>
+                                                                    <ul class="spec-list">
+                                                                        <li>
+                                                           <!-- $oValue = $options['26'];
+                                                           echo $oValue['product_option_value'][0]['name'];?>
+                                                            <input type='hidden' id="input-option11433" name='option[11433]' value="40142" /> -->
+
+                                                            Enabled
+                                                           </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="spec-item">
+                                                                <div class="content-col">
+                                                                    <span class="spec-title">Bluetooth</span>
+                                                                    <ul class="spec-list">
+                                                                        <li>
+                                                                            Enabled                                                                            
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="spec-item">
+                                                                <div class="content-col">
+                                                                    <span class="spec-title">Lighting</span>
+                                                                    <ul class="spec-list">
+                                                                        <li>Enabled                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="spec-item">
+                                                                <div class="content-col">
+                                                                    <span class="spec-title">Fan control</span>
+                                                                    <ul class="spec-list">
+                                                                        <li>
+                                                                            Enabled                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="spec-item">
+                                                                <div class="content-col">
+                                                                    <span class="spec-title">Front ports</span>
+                                                                    <ul class="spec-list">
+                                                                        <li>
+                                                                            1x USB2.01x USB3.1 Gen1 Audio Microphone                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="spec-item">
+                                                                <div class="content-col">
+                                                                    <span class="spec-title">Rear ports</span>
+                                                                    <ul class="spec-list">
+                                                                        <li>
+                                                                            4 x USB 3.1 Gen1 4 x USB 2.0 Gen1 3.5mm Headphone + Mic ports                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                </div>
+                                                  
+                                                </div>
+                                                <div class="swiper-scrollbar"></div>
+                                            </div>
+                                            </div>
+                                          <div class="tab-pane fade show active" id="performance-dimensions" role="tabpanel" aria-labelledby="tab-performance-dimensions">
+                                            <div class="swiper swiper-scroll">
+                                              <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="pc-specs key-features">
+                                                    <div class="spec-item">
+                                                        <div class="content-col">
+                                                            <span class="spec-title">Cinebench score</span>
+                                                            <ul class="spec-list">
+                                                                <li>
+                                                                    19614                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    
-                                                    
-                                                </div>-->
-                                            <div class="col-auto">
-                                                <a href="https://themvp.in/index.php?route=account/forgotten"
-                                                    class="link-icon small"> Forgotten Password</a>
+                                                    <div class="spec-item">
+                                                        <div class="content-col">
+                                                            <span class="spec-title">3DS Mark score</span>
+                                                            <ul class="spec-list">
+                                                                <li>
+                                                                    10614                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  <div class="spec-item">
+                                                        <div class="content-col">
+                                                            <span class="spec-title">hi Score</span>
+                                                            <ul class="spec-list">
+                                                                <li>Elite</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  <div class="spec-item">
+                                                        <div class="content-col">
+                                                            <span class="spec-title">Wattage</span>
+                                                            <ul class="spec-list">
+                                                                <li>459</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  <div class="spec-item">
+                                                        <div class="content-col">
+                                                            <span class="spec-title">Dimensions</span>
+                                                            <ul class="spec-list">
+                                                                <li>
+                                                                    424mm x 215mm x 460mm                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  <div class="spec-item">
+                                                        <div class="content-col">
+                                                            <span class="spec-title">Weight</span>
+                                                            <ul class="spec-list">
+                                                                <li>Approx 12 kg
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                  </div>
+                                                  
+                                                </div>
+                                                <div class="swiper-scrollbar"></div>
+                                              </div>
                                             </div>
                                         </div>
                                     </div>
+                                                                        
+                                </div>
+                                <div id="payuWidget" style="margin-top: 20px;"> </div>
+                            </div>
+                        </div><!-- end product -->
+                        
+                        
+                        
+                        <div class="product-cta pcs-cta">
+                            <div class="container-fluid layout-fixed">
+                            <div class="row justify-content-between align-items-center g-5">
+                                <div class="col-5 col-md-8">
+                                    <ul class="sale-info ">
+                                        <li>
+                                            <a href="/talk-to-expert">
+                                                <span><img src="catalog/view/assets/img/icon-chat.png"></span>
+                                                <span>Talk to an expert</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span><img src="catalog/view/assets/img/icon-help.png"></span>
+                                                <span>After sale services</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span><img src="catalog/view/assets/img/icon-warranty.png"></span>
+                                                <span>3 years doorstep warranty</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-7 col-md-4">
+                                    <div class="d-flex justify-content-end">
+                                        <div class="product-price">
+                                            <div class="current-value total">
+                                                <span class="currancy">₹</span>
+                                                <span class="value-text" id="product_price_value" data-value="121021">121,021.00</span>
+                                            </div>
+                                            <div class="mb-2" id="emi_button_id">
+                                                <a href="#" class="link link-icon" data-bs-toggle="modal" data-bs-target="#EMI-Options-Modal">EMI Options <img src="catalog/view/assets/img/icon-info.png" class="icon icon__medium"> </a>
+                                            </div>
+                                        </div>
+                                        <div class="cta-buttons-container">
+                                            <div class="cta-buttons">                                               
+                                            <button type="button" id="button-cart" onclick="button_cart()" data-loading-text="Loading..." class="btn btn-primary w-100">Add To Cart</button>
 
-                                    <!-- <div class="col-12">
-                                            <div class="g-recaptcha" data-sitekey="6LeEO_UiAAAAAOz52IcyG_eWh4xLF-m7L2HRtmfl"></div>
-                                        </div> -->
-                                    <div class="col-12">
-                                        <div class="form-group mt-3 text-center">
-                                            <button class="btn btn-primary btn-cta btn-lg btn-block w-100"
-                                                type="submit">Login </button>
+                                            </div>
+                                            <div class="my-2 text-center">
+                                                                                                    <a href="" class="link link-iconlink-dark">Customise</a>
+                                                                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form><!-- end sign in form -->
-
-
-                            <div class="entry-alt-options">
-                                <p>New Customer? Register Account <a href="https://themvp.in/create-account"
-                                        class="link-underline ms-2">Sign Up</a></p>
                             </div>
-                        </div> <!-- end card-body -->
+                            </div>         
+                        </div>
+                        
                     </div>
-                    <!-- end card -->
+                </div>
+                    
+        
+        </section>
+            
+    
+          
+        <div  class="product-cta-trigger">
+            
+            
+                
+            <section class="key-information">
+                
+                <div class="help-block wow fadeInUp" data-wow-delay=".6s" data-wow-duration=".3s">
+                    <div class="container">
+                        <div class="block-wrapper">
+                            <div class="row justify-content-center align-items-center ">
+                                <div class="col-md-6">
+                                    <div>
+                                        <h2>Need help choosing the right system?</h2>
+                                        <p>Connect with our experts today and receive personalized guidance and build recommendations</p>
+                                        <div class="mt-4">
+                                            <a href="talk-to-expert" class="btn btn-primary">Talk to an expert</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="mt-3">
+                                        <img class="img-fluid" src="catalog/view/assets/img/help-team-group.webp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-fixed">
+                    <div class="support-info">
+                        <div id="sale-support" class="info-content sale-support wow fadeInUp" data-wow-delay="1s" data-wow-duration=".6s">
+                            <div class="title">
+                                <h4 class="title-text">After Sale Support</h4>
+                            </div>
+                            <div class="content">
+                                <p>Unmatched Support Team</p>
+                                <div class="my-4">
+                                    <div class="row justify-content-between">
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <a class="link link-icon link-white" href="">
+                                                    <img src="catalog/view/assets/img/icon-mail.webp" class="icon icon__medium"> 
+                                                    <span class="ms-2">support@solution.in</span>
+                                                </a>
+                                            </div>
+                                            <div class="my-2">
+                                                <a class="link link-icon link-white" href="tel:18003092944">
+                                                    <img src="catalog/view/assets/img/icon-phone-1.webp" class="icon icon__medium">
+                                                    <span  class="ms-2">1800 309 2944</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="catalog/view/assets/img/icon-hep-lg.webp" class="support-icon img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="warranty-support" class="info-content warranty-support wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".6s">
+                            <div class="title">
+                                <h4 class="title-text">Warranty</h4>
+                            </div>
+                            <div class="content">
+                                <p>3 years doorstep warranty</p>
+                                <div class="my-2">
+                                    <div class="row justify-content-between">
+                                        <div class="col-6">
+                                            <div class="my-2">
+                                                <a class="link link-icon link-white" href="">
+                                                    <img src="catalog/view/assets/img/icon-mail.webp" class="icon icon__medium"> 
+                                                    <span class="ms-2">support@solution.in</span>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="catalog/view/assets/img/icon-warranty-lg.webp" class="support-icon img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+            </section>
+        </div>
+    </main>
+        
+     
+        
+        
+        
+    <!-- END Storage 2 Modal -->
+    
+    <!-- EMI Modal -->
+    <div class="modal modal-custom fade" data-bs-backdrop="static" data-bs-keyboard="false" id="EMI-Options-Modal" tabindex="-1" aria-labelledby="EMI-Options-ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">EMI Options</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="emi-options">
+                <div class="emi-options-table">
+                    <div class="swiper table-scroll">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table table-bordered">
+                                      <thead>
+                                    <tr>
+                                      <th scope="col">Duration</th>
+                                      <th scope="col">EMI</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>6 Months</td>
+                                      <td id="month6">Rs. 20,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>12 Months</td>
+                                      <td id="month12">Rs. 20,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>18 Months</td>
+                                      <td id="month18">Rs. 20,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>24 Months</td>
+                                      <td id="month24">Rs. 20,000</td>
+                                    </tr>
+                                  </tbody>
 
-                </div> <!-- end col -->
-            </div><!-- end row -->
+                                  </table>
+                              </div>
+                             
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p class="m-0">This is a sample calculation using a 16% annual interest rate. Choose an EMI option during checkout to get the EMI rates applicable for your order.</p>
+                    </div>
+                    
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="padding:0 ;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalTitle">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="mdbody">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btnNav" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btnNav">Select</button>
+      </div>
+    </div>
+  </div>
+</div>
+   
+    <script>
+           function show_modal(modal_title,option_id){
+    // console.log(modal_title); return false;
+    $('#myModalTitle').html(modal_title);
+    $('#myModal').modal('show');
+    $('#mdbody').html('<div class="spinner-border spinner-border-sm" role="status"><span class="visually-hidden">Loading...</span></div>');
+    
+    // var platform = $('#rdoIntel:checked').val() ? 'intel' : 'amd';
+/*    var id = get_id_from_index(current_index);
+    document.form1.cmd.value = 'get_accordian';
+    document.form1.id.value = id;
+    document.form1.platform.value = platform;
+*/    var id=option_id;
+    var product_id
+    var product_id = $('input[name="product_id"]').val();
+    var platform = "intel";
+    var params = {id:id, platform:platform,product_id:product_id};
+    $.post('index.php?route=product/product/get_accordian_forComponent',params,function(data){
+        $('#mdbody').html(data);
+    })
+    
+    return false;
+}
+/*    function onco(val){
+        var price = $('input[name="optiones"]:checked').attr('price');
+        var name = $('input[name="optiones"]:checked').attr('optionname');
+        // var option_id = $('input[name="optiones"]:checked').attr('option_id');
+        // var product_id = $('input[name="product_id"]').val();
+        if(val=='ram'){
+            let product_option_value_id = $(".changeRam").val();
+            // alert(product_option_value_id);
+            var option_value_id = $('input[name="optiones"]:checked').val();
+             var product_id = $('input[name="product_id"]').val();
+             var pricebefore = $(".changeRam").attr('price');
+          
+               $.ajax({
+                type:"POST",
+                url:"index.php?route=product/product/optionUpdate",
+                data: {
+                       
+                        'product_option_value_id': product_option_value_id,
+                        'product_id':product_id,
+                        'option_value_id':option_value_id
+                      },
+                
+                success:function(response){   
+                 $("#changeRam").html(name);
 
-        </div><!-- end container -->
+                 pricebefore = parseInt(pricebefore);
+                 price       =     parseInt(price);
+                var subTotal = $('.value-text').html();
+                
+                subTotal = parseFloat(subTotal.replace(/,/g, ''));
+                total =  subTotal - pricebefore;
+                total = total + price;
+                total    =  total.toFixed(2);
+        
+                 let dollarIndianLocale = Intl.NumberFormat('en-IN');
 
+                $('.value-text').html(dollarIndianLocale.format(total) + ".00");
+                document.getElementsByClassName('value-text')[0].setAttribute("data-value", total);
+                                    
+                }
+            });
+        }
+        
+        if(val=='storage1'){
+            let product_option_value_id = $(".storage1").val();
+            // alert(product_option_value_id);
+            var option_value_id = $('input[name="optiones"]:checked').val();
+             var product_id = $('input[name="product_id"]').val();
+             var pricebefore = $(".storage1").attr('price');
+          
+               $.ajax({
+                type:"POST",
+                url:"index.php?route=product/product/optionUpdate",
+                data: {
+                       
+                        'product_option_value_id': product_option_value_id,
+                        'product_id':product_id,
+                        'option_value_id':option_value_id
+                      },
+                
+                success:function(response){   
+                 $("#storage1").html(name);
 
-    </main><!-- end Page -->
+                 pricebefore = parseInt(pricebefore);
+                 price       =     parseInt(price);
+                var subTotal = $('.value-text').html();
+                
+                subTotal = parseFloat(subTotal.replace(/,/g, ''));
+                total =  subTotal - pricebefore;
+                total = total + price;
+                total    =  total.toFixed(2);
+        
+                 let dollarIndianLocale = Intl.NumberFormat('en-IN');
 
+                $('.value-text').html(dollarIndianLocale.format(total) + ".00");
+                document.getElementsByClassName('value-text')[0].setAttribute("data-value", total);
+                }
+            });
+        }
+        
+        if(val=='storage2'){
+            let product_option_value_id = $(".storage2").val();
+            // alert(product_option_value_id);
+            var option_value_id = $('input[name="optiones"]:checked').val();
+             var product_id = $('input[name="product_id"]').val();
+             var pricebefore = $(".storage2").attr('price');
+          
+               $.ajax({
+                type:"POST",
+                url:"index.php?route=product/product/optionUpdate",
+                data: {
+                       
+                        'product_option_value_id': product_option_value_id,
+                        'product_id':product_id,
+                        'option_value_id':option_value_id
+                      },
+                
+                success:function(response){   
+                 $("#storage2").html(name);
+
+                 pricebefore = parseInt(pricebefore);
+                 price       =     parseInt(price);
+                var subTotal = $('.value-text').html();
+                
+                subTotal = parseFloat(subTotal.replace(/,/g, ''));
+                total =  subTotal - pricebefore;
+                total = total + price;
+                total    =  total.toFixed(2);
+        
+                 let dollarIndianLocale = Intl.NumberFormat('en-IN');
+                
+                $('.value-text').html(dollarIndianLocale.format(total) + ".00");
+                document.getElementsByClassName('value-text')[0].setAttribute("data-value", total);
+                }
+            });
+        }
+
+        var length = $('input[name="optiones"]:checked').length;
+         if (length == 0)
+        {
+            return false;
+
+        } else {
+      
+        }
+    }*/
+</script>
+    <script type="text/javascript">
+        // $('#button-cart').on('click', function () {
+        function button_cart(){
+            $.ajax({
+                url: 'index.php?route=checkout/cart/add',
+                type: 'post',
+                data: $('#product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, input[name=\'optiones\']:checked, #product select, #product textarea'),
+                dataType: 'json',
+                beforeSend: function () {
+                    //$('#button-cart').button('loading');
+                },
+                complete: function () {
+                    //$('#button-cart').button('reset');
+                },
+                success: function (json) {
+                    $('.alert, .text-danger').remove();
+                    $('.form-group').removeClass('has-error');
+
+                    if (json['error']) {
+                        if (json['error']['option']) {
+                            for (i in json['error']['option']) {
+                                var element = $('#input-option' + i.replace('_', '-'));
+
+                                if (element.parent().hasClass('input-group')) {
+                                    element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+                                } else {
+                                    element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+                                }
+                            }
+                        }
+
+                        if (json['error']['recurring']) {
+                            $('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
+                        }
+
+                        // Highlight any found errors
+                        $('.text-danger').parent().addClass('has-error');
+                    }
+
+                    if (json['success']) {
+                        $('#notification').html('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+
+                        //$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+                        $('#cart-total').html(json['total']);
+
+                        $('html, body').animate({scrollTop: 0}, 'slow');
+
+                        $('#cart > ul').load('index.php?route=common/cart/info ul li');
+                    }
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                }
+            });
+        };
+        </script>
+    <script type="text/javascript">
+        $('#emi_button_id').on('click', function(){
+            let p =  $('#product_price_value').attr('data-value');
+            //let product_price = Number(p);
+
+            let monthly_interest_rate = 0.0133333;
+            for (var i = 6; i <= 24; i=i+6) {
+                let power = Math.pow(1.0133333, i);
+                
+                numerator = p * monthly_interest_rate * power;
+                denominator =  power - 1;
+                let emi_amount = numerator/denominator;
+                EMI = emi_amount.toFixed(2);
+                $('#month'+i).html(EMI);    
+            }
+            
+            /*$('#orderId').html(res.orderTrackRecord.order_id);
+            $('#billigDate').html(res.orderTrackRecord.billing_date);
+            $('#customerName').html(res.orderTrackRecord.customer_name);
+            $('#Warrenty').html(res.orderTrackRecord.warrenty);*/
+        });
+        function select_item(part_id,id,price,name){
+    // alert(part_id);
+            if (part_id == 16) {
+                var index = "16-r";
+            }else if(part_id == 18){
+                var index = "18-s2";
+            }else if(part_id == 19){
+                var index = "19-s1";
+            }
+    $('.change_'+part_id).attr('name', 'option['+index+']'); 
+    $('.change_'+part_id).val(id); 
+    var total = $("#product_price_value").attr("data-value");
+    // alert(total);
+        console.log("total price is"+total);
+    var priceO = $('.change_'+part_id).attr("price");
+    console.log("attribute price is"+priceO);
+    $('.change_'+part_id).attr("price",price);
+    total = total - priceO;
+    console.log("price of item is "+ total);
+    totalN = total + price;
+    
+    // alert(totalN);
+    $("#product_price_value").attr("data-value",totalN);
+    $("#product_price_value").html(totalN.toCurrencyString());
+    
+    PayU(totalN);
+
+    //$("input[name='product_id["+index_id+"]']").val(product_id);
+    $('#change_'+part_id).html(name);
+    console.log('part id = '+part_id+', id = '+id);
+    $('#myModal').modal('hide');
+
+    return false;
+}
+Number.prototype.toCurrencyString = function(){
+        return this.toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g, '$&,');
+    }
+
+    </script>
+
+    <script type="text/javascript">
+        function PayU(amount) {
+            let key    = 'IX72o9';
+            //let amount = $('#product_price_value').attr('data-value');
+            console.log(amount);
+            //let amount = 83665;
+            const widgetConfig = {
+                "key": key,
+                "amount": amount,
+            };
+            payuAffordability.init(widgetConfig);
+        }
+
+    </script>
 
     <!-- footer section start  -->
     <footer class="footer">
@@ -994,7 +1725,7 @@
                              <li><a href="#">Track Order</a></li>
                              <li><a href="#">Talk to an Expert</a></li>
                              <li><a href="#">Locations & Contacts</a></li>
-                             <li><img src="images/svg/mail-light.svg" class="icon"><a href="mailto:support@themvp.in">support@computersolution.in</a></li>
+                             <li><img src="images/svg/mail-light.svg" class="icon"><a href="">support@computersolution.in</a></li>
                              <li class="mt-3">
                                 <img src="images/svg/call-light.svg" class="icon">
                                 <div>
@@ -1017,128 +1748,336 @@
         </div>
      </footer>
 
-    <!-- Floating Buttons -->
-    <a href=""
-        class="fixed-whatsapp" target="_blank">
-        <img src="catalog/view/assets/img/svg/whatsapp-light.svg">
-    </a>
-    <!-- End Floating Buttons -->
 
-    <!-- Search Modal -->
-    <div class="modal fade" id="GlobalSearchModal" data-bs-backdrop="static" tabindex="-1"
-        aria-labelledby="GlobalSearchModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen searchmodal-fullscreen">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body">
+<!-- Floating Buttons -->
+<a href="" class="fixed-whatsapp" target="_blank">
+    <img src="catalog/view/assets/img/svg/whatsapp-light.svg">
+</a>
+<!-- End Floating Buttons -->
 
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <form class="d-flex mb-5">
-                                    <input class="form-control me-2" id="prod_search" value="" type="search"
-                                        placeholder="Search" aria-label="Search" autocomplete="off">
-                                    <button class="btn btn-primary" type="button" id="submit_search">Search</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-
-                                <div class="my-4">
-                                    <small class="text-uppercase text-muted" style="font-size: 11px">Best
-                                        Selling</small>
-
-
-
-                                    <ul class="search-suggestions-nav" style="">
-                                        <li>
-                                            <a href="#">Gaming</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Visual</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Graphic</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-
-
-
-
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
+<!-- Search Modal -->
+<div class="modal fade" id="GlobalSearchModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="GlobalSearchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen searchmodal-fullscreen">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        
+          <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="d-flex mb-5">
+                      <input class="form-control me-2" id="prod_search" value="" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                      <button class="btn btn-primary" type="button" id="submit_search">Search</button>
+                    </form>
                 </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                    
+                    <div class="my-4">
+                        <small class="text-uppercase text-muted" style="font-size: 11px">Best Selling</small>
 
-            </div>
-        </div>
+                        
+                        
+                        <ul class="search-suggestions-nav" style="">
+                          <li>
+                            <a href="#">Gaming</a>
+                          </li>
+                          <li>
+                            <a href="#">Visual</a>
+                          </li>
+                          <li >
+                            <a href="#">Graphic</a>
+                          </li>
+                          
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                  </div>
+              </div>
+              
+              
+              
+              
+          </div>
+          
+      </div>
+      
     </div>
+  </div>
+</div>
+    
+       <!-- Java Script -->
 
-    <!-- Java Script -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="catalog/view/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="catalog/view/assets/js/jquery-1.12.4.min.js"></script>    
     <!-- <script src="catalog/view/assets/js/vendor.min.js"></script> -->
 
     <script src="catalog/view/assets/js/bootstrap.bundle.min.js"></script>
-
+    
     <script src="catalog/view/assets/js/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>      
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/ScrollToPlugin.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="catalog/view/assets/vendors/side-menu/slide-menu.js"></script>
-    <script type="text/javascript" src="catalog/view/assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="catalog/view/assets/vendors/swiper/swiper-bundle.min.js"></script> 
     <script type="text/javascript" src="catalog/view/assets/vendors/fancybox/jquery.fancybox.min.js"></script>
-
+    
     <script src="catalog/view/assets/js/wow.min.js"></script>
-
-
-
+    
+    
+    
     <!-- Performance Slider -->
     <link href="catalog/view/assets/vendors/velocity/number-pb.css" rel="stylesheet" type="text/css" />
     <script src="catalog/view/assets/vendors/velocity/jquery.velocity.min.js"></script>
     <script src="catalog/view/assets/vendors/velocity/number-pb.js"></script>
-
+    
     <script type="text/javascript" src="catalog/view/assets/js/main.js"></script>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="catalog/view/assets/js/form-validation.js"></script>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-
+   
     <script>
         feather.replace();
-        $('[data-bs-toggle="tooltip"]').tooltip();
+        $('[data-bs-toggle="tooltip"]').tooltip();            
 
     </script>
+        
+      <script id="rendered-js" >
 
-<script>    
-   $('#menutoggle').on('click', function(e) {
-     $('.mobile-nav').toggleClass("wd-opened");
-     e.preventDefault();
-   });
-   
+            const wrap = document.querySelector(".options-sec");
+            const expa = document.querySelector(".exp-a");
+            const expb = document.querySelector(".exp-b");
+            const expc = document.querySelector(".exp-c");
+          const dur = 0.6;
+
+//     let tl1 = gsap.timeline({
+//       reversed: true,
+//     });
+//     let tl2 = gsap.timeline({
+//       reversed: true,
+//     });
+
+//     tl1
+//       .fromTo(".img-1", {width: "50%" }, { duration: dur, width: "60%" })
+//       .fromTo(".img-2", {width: "50%" }, { duration: dur, width: "40%" }, "<");
+
+//     tl2
+//       .to(".img-2", { duration: dur, width: "60%" })
+//       .to(".img-1", { duration: dur, width: "40%" }, "<");
+//
+//        gsap.set(".exp-a", { width: "33.3%" });
+//        gsap.set(".exp-b", { width: "33.3%" });
+//        gsap.set(".exp-c", { width: "33.3%" });
+
+        $(".exp-a").click(function(){
+          gsap.to(".exp-a", { className: "sec-col exp-a expand open"});
+          gsap.to(".exp-b", { className: "sec-col exp-b expand close" });
+          gsap.to(".exp-c", { className: "sec-col exp-c expand close" });
+
+        });
+          
+          $(".exp-b").click(function(){
+          gsap.to(".exp-a", { className: "sec-col exp-a expand close"});
+          gsap.to(".exp-b", { className: "sec-col exp-b expand open" });
+          gsap.to(".exp-c", { className: "sec-col exp-c expand close" });
+
+        });
+          
+          $(".exp-c").click(function(){
+          gsap.to(".exp-a", { className: "sec-col exp-a expand close"});
+          gsap.to(".exp-b", { className: "sec-col exp-b expand close" });
+          gsap.to(".exp-c", { className: "sec-col exp-c expand open" });
+
+        });
+          
+          
+          
+//          wrap.addEventListener("mouseleave", () => {
+//          gsap.to(".exp-a", { duration: 1, width: "33.3%" });
+//          gsap.to(".exp-b", { duration: 1, width: "33.3%" });
+//          gsap.to(".exp-c", { duration: 1, width: "33.3%" });
+//
+//        });
+          
+          const box = document.querySelector(".exp-a");
+          
+          box.addEventListener("mouseenter",function(){
+          const move = "";
+          this.classList.add(move);
+
+          this.addEventListener("animationend",function(){
+            this.classList.remove(move);
+          });
+
+          this.addEventListener("mouseleave",function(){
+            this.classList.remove(move);
+          });
+  
+});
+          
 </script>
 
-</body>
+        <!-- 
 
+        Keyword: footer links turn into accordion for mobile
+        
+        https://stackoverflow.com/questions/63113617/how-to-create-accordion-menu-footer-for-mobile-only
+
+        -->
+    <script type="text/javascript">
+        $('#prod_search').bind("keypress", function(e) {
+            //alert("search");
+            if (e.keyCode == 13) {
+                var url = $('base').attr('href') + 'index.php?route=product/search';
+
+                var value = $('#prod_search').val();
+
+                if (value) {
+                    url += '&search=' + encodeURIComponent(value);
+                }
+
+                location = url;
+            }
+        });
+
+        $('#submit_search').on('click', function(e) {
+            var url = $('base').attr('href') + 'index.php?route=product/search';
+
+            var value = $('#prod_search').val();
+
+            if (value) {
+                url += '&search=' + encodeURIComponent(value);
+            }
+
+            location = url;
+        });
+
+        $('#submit_search2').on('click', function(e) {
+            var url = $('base').attr('href') + 'index.php?route=product/search';
+
+            var value = $('#prod_search2').val();
+
+            if (value) {
+                url += '&search=' + encodeURIComponent(value);
+            }
+
+            location = url;
+        });
+
+        $('#no_search_submit').on('click', function(e) {
+            var url = $('base').attr('href') + 'index.php?route=product/search';
+
+            var value = $('#no_search_id').val();
+
+            if (value) {
+                url += '&search=' + encodeURIComponent(value);
+            }
+
+            location = url;
+        });
+
+    </script>
+    
+    
+       
+<!-- Grid Masonry -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+<script>
+        $(function() {
+            var $grid = $('.grid').imagesLoaded( function() {
+              $grid.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
+              }); 
+            });
+         });
+         
+          
+        
+       
+        
+
+    </script>
+    
+    
+<!-- Performance Slider -->
+<script>
+      $(function() {
+        
+        
+          
+//        function standardValue2(y=30) {
+//          return y;
+//        }
+//         
+
+        var controlBar = $('#performance-noise .number-pb').NumberProgressBar({
+          duration: 2000,
+          min: 0,
+          max: 46,
+          current: 40
+        });
+          
+        var controlBar = $('#performance-gpu .number-pb').NumberProgressBar({
+          duration: 2500,
+          min: 0,
+          max: 72,
+          current: 51
+        });
+          
+        var controlBar = $('#performance-cpu .number-pb').NumberProgressBar({
+          duration: 3000,
+          min: 0,
+          max: 75,
+          current: 63
+        });
+
+
+
+      });
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 80
+        }, 300, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<script>
+    window.onload = function() {
+        let key    = 'IX72o9';
+        let amount = $('#product_price_value').attr('data-value');
+        console.log(amount);
+        //let amount = 83665;
+        const widgetConfig = {
+            "key": key,
+            "amount": amount,
+        };
+        payuAffordability.init(widgetConfig);
+    }
+</script>
+        
+</body>
 </html>
